@@ -1,0 +1,10 @@
+SELECT *
+{
+    ?x <https://www.smolang.org/dependency/accessedBy> [
+        <https://www.smolang.org/dependency/hasRole> [
+         <https://www.smolang.org/dependency/roleName> "Admin" ]];
+       <https://www.smolang.org/dependency/at> ?date;
+       <https://www.smolang.org/dependency/accesses> [
+         <https://www.smolang.org/dependency/systemName> ?name ].
+FILTER (YEAR(?date) > 2014)
+}   

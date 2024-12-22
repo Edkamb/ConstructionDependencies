@@ -1,0 +1,55 @@
+prefixes:
+ dep: "https://www.smolang.org/dependency/"
+
+mappings:
+  roles:
+    sources:
+      - access: 'source_1.csv'
+        referenceFormulation: csv
+    s: https://www.smolang.org/dependency/rl$(role)
+    po:
+      - [a, dep:Role]
+      - [dep:roleName, $(role)]
+  persons:
+    sources:
+      - access: 'source_1.csv'
+        referenceFormulation: csv
+    s: https://www.smolang.org/dependency/usr$(id)
+    po:
+      - [a, dep:User]
+      - [dep:name, $(first) $(last)]
+      - p: dep:hasRole
+        o: 
+          - mapping: roles
+            condition: 
+              function: equal
+              parameters:
+                - [pr1,$(role),s]
+                - [pr2,$(role),o] 
+  systems:
+    sources:
+      - access: 'source_2.csv'
+        referenceFormulation: csv
+    s: https://www.smolang.org/dependency/sys$(id)
+    po:
+      - [a, dep:System]
+      - [dep:systemName, $(name)]
+      - [dep:location, $(location)]
+  accesses:
+    sources:
+      - access: 'source_3.csv'
+        referenceFormulation: csv
+    po:
+      - [a, dep:Access]
+      - p: dep:at
+        o: 
+          value: $(date)
+          datatype: xsd:date
+      - p: dep:accesses
+        o: 
+         value: https://www.smolang.org/dependency/sys$(systemId)
+         type: iri
+      - p: dep:accessedBy
+        o: 
+         value: https://www.smolang.org/dependency/usr$(userId)
+         type: iri

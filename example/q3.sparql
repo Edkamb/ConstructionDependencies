@@ -1,0 +1,9 @@
+SELECT *
+{
+    ?x a <https://www.smolang.org/dependency/User>;
+       <https://www.smolang.org/dependency/name> ?name;
+       <https://www.smolang.org/dependency/hasRole> 
+       [
+       <https://www.smolang.org/dependency/roleName> ?roleN].
+FILTER (?roleN = "Admin")
+}   

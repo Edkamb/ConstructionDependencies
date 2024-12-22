@@ -1,0 +1,5 @@
+SELECT ?name ( COUNT(?x) AS ?nr )
+{
+    ?x <https://www.smolang.org/dependency/accessedBy> ?s.
+    ?s  <https://www.smolang.org/dependency/name> ?name
+} GROUP BY ?name
