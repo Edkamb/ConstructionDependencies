@@ -19,7 +19,6 @@ example/application2.py
 ```
 
 Known limitations:
- * No dependencies between mappings
  * Mappings must be converted to RDF already
  * Shapes must be in separated files and are analyzed using a generic query
  * Ontology is not considered
