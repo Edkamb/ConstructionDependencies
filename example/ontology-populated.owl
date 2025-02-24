@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="https://www.smolang.org/dependency/"
+         xmlns="https://www.smolang.org/dependency/">
+
+<owl:Ontology rdf:about="https://www.smolang.org/dependency"/>
+
+<owl:ObjectProperty rdf:about="accessedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="Access"/>
+  <rdfs:range rdf:resource="User"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="accesses">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="Access"/>
+  <rdfs:range rdf:resource="System"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="hasRole">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="User"/>
+  <rdfs:range rdf:resource="Role"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="at">
+  <rdfs:domain rdf:resource="Access"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="location">
+  <rdfs:domain rdf:resource="System"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="name">
+  <rdfs:domain rdf:resource="User"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="roleName">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="Role"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="systemId">
+  <rdfs:domain rdf:resource="System"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="systemName">
+  <rdfs:domain rdf:resource="System"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="userId">
+  <rdfs:domain rdf:resource="User"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="Access"/>
+
+<owl:Class rdf:about="User"/>
+
+<owl:Class rdf:about="System"/>
+
+<owl:Class rdf:about="Role"/>
+
+<owl:NamedIndividual rdf:about="system1">
+  <rdf:type rdf:resource="System"/>
+  <systemId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</systemId>
+  <systemName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Server1</systemName>
+  <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Frankfurt</location>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="system2">
+  <rdf:type rdf:resource="System"/>
+  <systemId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</systemId>
+  <systemName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Server2</systemName>
+  <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Darmstadt</location>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="role1">
+  <rdf:type rdf:resource="Role"/>
+  <roleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT</roleName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="role2">
+  <rdf:type rdf:resource="Role"/>
+  <roleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Admin</roleName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="Peter Schmitt">
+  <rdf:type rdf:resource="User"/>
+  <hasRole rdf:resource="role2"/>
+  <userId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</userId>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="Paul Schneider">
+  <rdf:type rdf:resource="User"/>
+  <hasRole rdf:resource="role1"/>
+  <userId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</userId>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="Pia Schwarz">
+  <rdf:type rdf:resource="User"/>
+  <hasRole rdf:resource="role2"/>
+  <userId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</userId>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="Eva Adam">
+  <rdf:type rdf:resource="User"/>
+  <userId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</userId>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="access1">
+  <rdf:type rdf:resource="Access"/>
+  <accessedBy rdf:resource="Peter Schmitt"/>
+  <at rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11-12-2024</at>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="access2">
+  <rdf:type rdf:resource="Access"/>
+  <accessedBy rdf:resource="Paul Schneider"/>
+  <at rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11-12-2024</at>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="access3">
+  <rdf:type rdf:resource="Access"/>
+  <accessedBy rdf:resource="Paul Schneider"/>
+  <at rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11-12-2024</at>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="access4">
+  <rdf:type rdf:resource="Access"/>
+  <accessedBy rdf:resource="Peter Schmitt"/>
+  <at rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11-12-2024</at>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="access5">
+  <rdf:type rdf:resource="Access"/>
+  <accessedBy rdf:resource="Pia Schwarz"/>
+  <at rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> 11-12-2024</at>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
