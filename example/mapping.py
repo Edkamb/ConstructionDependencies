@@ -11,8 +11,8 @@ def make_systems(onto,df):
             new_sys = onto.System()
             print(new_sys)
             new_sys.systemId.append(sys['id'])
-            new_sys.systemName.append(sys[' name'])
-            new_sys.location.append(sys[' location'])
+            new_sys.systemName.append(sys['name'])
+            new_sys.location.append(sys['location'])
 
     return onto
 
@@ -44,9 +44,10 @@ def make_accesses(onto,df):
     with onto:
         for row,access in df.iterrows():
             a = onto.Access()
-            a.accessedBy = onto.search(userId=access[' userid'])
+            a.accessedBy = onto.search(userId=access['userid'])
             a.accessed = onto.search(systemId=access['systemid'])
-            a.at.append(access[' date'])
+            a.at.append(access['date'])
+    return onto
 
 
 
