@@ -1,0 +1,545 @@
+,v1,taxon_v1,v2,taxon_v2,rel
+0,apple,malus domestica,chives,allium schoenoprasum,companion
+12,apple,malus domestica,garlic,allium sativum,companion
+24,apple,malus domestica,grass,poaceae,antagonistic
+48,apple,malus domestica,horseradish,armoracia rusticana,companion
+60,apple,malus domestica,lemon balm,melissa officinalis,companion
+72,apple,malus domestica,marigold,tagetes,companion
+78,apple,malus domestica,mustard,brassica,companion
+84,apple,malus domestica,nasturtium,nasturtium,companion
+96,apple,malus domestica,potato,solanum tuberosum,antagonistic
+108,apple,malus domestica,spinach,spinacia oleracea,companion
+114,apple,malus domestica,tansy,tanacetum vulgare,companion
+120,apple,malus domestica,yarrow,achillea millefolium,companion
+132,apricot,prunus armeniaca,basil,ocimum basilicum,companion
+146,apricot,prunus armeniaca,garlic,allium sativum,companion
+160,apricot,prunus armeniaca,grass,poaceae,antagonistic
+188,apricot,prunus armeniaca,horseradish,armoracia rusticana,companion
+202,apricot,prunus armeniaca,lemon balm,melissa officinalis,companion
+216,apricot,prunus armeniaca,marigold,tagetes,companion
+223,apricot,prunus armeniaca,mustard,brassica,companion
+230,apricot,prunus armeniaca,nasturtium,nasturtium,companion
+244,apricot,prunus armeniaca,spinach,spinacia oleracea,companion
+251,apricot,prunus armeniaca,sunﬂower,helianthus annuus,companion
+272,apricot,prunus armeniaca,tansy,tanacetum vulgare,companion
+279,apricot,prunus armeniaca,tomato,solanum lycopersicum,antagonistic
+293,apricot,prunus armeniaca,yarrow,achillea millefolium,companion
+307,asparagus,asparagus officinalis,basil,ocimum basilicum,companion
+311,asparagus,asparagus officinalis,chives,allium schoenoprasum,companion
+315,asparagus,asparagus officinalis,marjoram,origanum majorana,companion
+319,asparagus,asparagus officinalis,parsley,petroselinum crispum,companion
+329,asparagus,asparagus officinalis,tomato,solanum lycopersicum,companion
+333,basil,ocimum basilicum,apricot,prunus armeniaca,companion
+347,basil,ocimum basilicum,asparagus,asparagus officinalis,companion
+351,basil,ocimum basilicum,cucumber,cucumis sativus,companion
+357,basil,ocimum basilicum,fennel,foeniculum vulgare,companion
+369,basil,ocimum basilicum,rue,ruta graveolens,antagonistic
+371,basil,ocimum basilicum,silverbeet,beta vulgaris var. flavescens,antagonistic
+373,basil,ocimum basilicum,tomato,solanum lycopersicum,companion
+377,bean,phaseolus,cabbage,brassica oleracea,companion
+378,bean,phaseolus,carrot,daucus carota,companion
+381,bean,phaseolus,chives,allium schoenoprasum,antagonistic
+383,bean,phaseolus,corn,zea mays,companion
+392,bean,phaseolus,cucumber,cucumis sativus,companion
+395,bean,phaseolus,eggplant,solanum melongena,companion
+396,bean,phaseolus,fennel,foeniculum vulgare,antagonistic
+402,bean,phaseolus,garlic,allium sativum,antagonistic
+404,bean,phaseolus,lettuce,lactuca sativa,companion
+409,bean,phaseolus,marigold,tagetes,companion
+410,bean,phaseolus,marjoram,origanum majorana,companion
+412,bean,phaseolus,onion,allium cepa,antagonistic
+414,bean,phaseolus,parsley,petroselinum crispum,companion
+419,bean,phaseolus,parsnip,pastinaca sativa,companion
+420,bean,phaseolus,potato,solanum tuberosum,companion
+422,bean,phaseolus,rosemary,salvia rosmarinus,companion
+425,bean,phaseolus,sage,salvia officinalis,companion
+427,bean,phaseolus,shallot,allium ascalonicum,antagonistic
+428,beet,beta vulgaris,bush bean,phaseolus vulgaris,companion
+436,beet,beta vulgaris,cabbage,brassica oleracea,companion
+438,beet,beta vulgaris,climbing bean,phaseolus vulgaris,antagonistic
+446,beet,beta vulgaris,dill,anethum graveolens,companion
+452,beet,beta vulgaris,lettuce,lactuca sativa,companion
+462,beet,beta vulgaris,marjoram,origanum majorana,companion
+466,beet,beta vulgaris,onion,allium cepa,companion
+470,beet,beta vulgaris,potato,solanum tuberosum,companion
+474,beet,beta vulgaris,silverbeet,beta vulgaris var. flavescens,companion
+476,beet,beta vulgaris,tomato,solanum lycopersicum,antagonistic
+480,borage,borago officinalis,cabbage,brassica oleracea,companion
+487,borage,borago officinalis,cucumber,cucumis sativus,companion
+508,borage,borago officinalis,strawberry,fragaria,companion
+515,borage,borago officinalis,tansy,tanacetum vulgare,companion
+522,borage,borago officinalis,tomato,solanum lycopersicum,companion
+536,broad bean,vicia faba,cabbage,brassica oleracea,companion
+538,broad bean,vicia faba,chives,allium schoenoprasum,antagonistic
+542,broad bean,vicia faba,corn,zea mays,companion
+560,broad bean,vicia faba,fennel,foeniculum vulgare,antagonistic
+572,broad bean,vicia faba,garlic,allium sativum,antagonistic
+576,broad bean,vicia faba,lettuce,lactuca sativa,companion
+586,broad bean,vicia faba,marjoram,origanum majorana,companion
+590,broad bean,vicia faba,onion,allium cepa,antagonistic
+594,broad bean,vicia faba,potato,solanum tuberosum,companion
+598,broad bean,vicia faba,spinach,spinacia oleracea,companion
+600,broccoli,brassica oleracea var. italica,bean,phaseolus,companion
+602,broccoli,brassica oleracea var. italica,beet,beta vulgaris,companion
+606,broccoli,brassica oleracea var. italica,borage,borago officinalis,companion
+620,broccoli,brassica oleracea var. italica,broad bean,vicia faba,companion
+624,broccoli,brassica oleracea var. italica,bush bean,phaseolus vulgaris,companion
+632,broccoli,brassica oleracea var. italica,climbing bean,phaseolus vulgaris,companion
+640,broccoli,brassica oleracea var. italica,coriander,coriandrum sativum,companion
+648,broccoli,brassica oleracea var. italica,cucumber,cucumis sativus,companion
+654,broccoli,brassica oleracea var. italica,dill,anethum graveolens,companion
+660,broccoli,brassica oleracea var. italica,marigold,tagetes,companion
+662,broccoli,brassica oleracea var. italica,marjoram,origanum majorana,companion
+666,broccoli,brassica oleracea var. italica,nasturtium,nasturtium,companion
+670,broccoli,brassica oleracea var. italica,potato,solanum tuberosum,companion
+674,broccoli,brassica oleracea var. italica,rue,ruta graveolens,antagonistic
+676,broccoli,brassica oleracea var. italica,strawberry,fragaria,antagonistic
+678,broccoli,brassica oleracea var. italica,tomato,solanum lycopersicum,companion
+682,brussell sprout,brassica oleracea var. gemmifera,bean,phaseolus,companion
+683,brussell sprout,brassica oleracea var. gemmifera,beet,beta vulgaris,companion
+685,brussell sprout,brassica oleracea var. gemmifera,borage,borago officinalis,companion
+692,brussell sprout,brassica oleracea var. gemmifera,broad bean,vicia faba,companion
+694,brussell sprout,brassica oleracea var. gemmifera,bush bean,phaseolus vulgaris,companion
+698,brussell sprout,brassica oleracea var. gemmifera,climbing bean,phaseolus vulgaris,companion
+702,brussell sprout,brassica oleracea var. gemmifera,coriander,coriandrum sativum,companion
+706,brussell sprout,brassica oleracea var. gemmifera,cucumber,cucumis sativus,companion
+709,brussell sprout,brassica oleracea var. gemmifera,dill,anethum graveolens,companion
+712,brussell sprout,brassica oleracea var. gemmifera,marigold,tagetes,companion
+713,brussell sprout,brassica oleracea var. gemmifera,marjoram,origanum majorana,companion
+715,brussell sprout,brassica oleracea var. gemmifera,potato,solanum tuberosum,companion
+717,brussell sprout,brassica oleracea var. gemmifera,strawberry,fragaria,companion
+718,brussell sprout,brassica oleracea var. gemmifera,sunﬂower,helianthus annuus,companion
+721,bush bean,phaseolus vulgaris,beet,beta vulgaris,companion
+729,bush bean,phaseolus vulgaris,cabbage,brassica oleracea,companion
+733,bush bean,phaseolus vulgaris,celery,apium graveolens,companion
+749,bush bean,phaseolus vulgaris,chives,allium schoenoprasum,antagonistic
+757,bush bean,phaseolus vulgaris,corn,zea mays,companion
+793,bush bean,phaseolus vulgaris,cucumber,cucumis sativus,companion
+805,bush bean,phaseolus vulgaris,garlic,allium sativum,antagonistic
+813,bush bean,phaseolus vulgaris,marjoram,origanum majorana,companion
+821,bush bean,phaseolus vulgaris,onion,allium cepa,antagonistic
+829,bush bean,phaseolus vulgaris,potato,solanum tuberosum,companion
+837,bush bean,phaseolus vulgaris,strawberry,fragaria,companion
+841,bush bean,phaseolus vulgaris,sunﬂower,helianthus annuus,companion
+853,cabbage,brassica oleracea,bean,phaseolus,companion
+854,cabbage,brassica oleracea,beet,beta vulgaris,companion
+856,cabbage,brassica oleracea,borage,borago officinalis,companion
+863,cabbage,brassica oleracea,broad bean,vicia faba,companion
+865,cabbage,brassica oleracea,bush bean,phaseolus vulgaris,companion
+869,cabbage,brassica oleracea,celery,apium graveolens,companion
+873,cabbage,brassica oleracea,climbing bean,phaseolus vulgaris,companion
+877,cabbage,brassica oleracea,coriander,coriandrum sativum,companion
+881,cabbage,brassica oleracea,cucumber,cucumis sativus,companion
+884,cabbage,brassica oleracea,dill,anethum graveolens,companion
+887,cabbage,brassica oleracea,garlic,allium sativum,antagonistic
+889,cabbage,brassica oleracea,lavender,lavandula,companion
+890,cabbage,brassica oleracea,lettuce,lactuca sativa,companion
+895,cabbage,brassica oleracea,marigold,tagetes,companion
+896,cabbage,brassica oleracea,marjoram,origanum majorana,companion
+898,cabbage,brassica oleracea,mint,mentha,companion
+900,cabbage,brassica oleracea,nasturtium,nasturtium,companion
+902,cabbage,brassica oleracea,onion,allium cepa,companion
+904,cabbage,brassica oleracea,potato,solanum tuberosum,companion
+906,cabbage,brassica oleracea,rosemary,salvia rosmarinus,companion
+909,cabbage,brassica oleracea,rue,ruta graveolens,antagonistic
+910,cabbage,brassica oleracea,sage,salvia officinalis,companion
+912,cabbage,brassica oleracea,strawberry,fragaria,antagonistic
+913,cabbage,brassica oleracea,tansy,tanacetum vulgare,companion
+914,cabbage,brassica oleracea,thyme,thymus vulgaris,companion
+916,carrot,daucus carota,bean,phaseolus,companion
+919,carrot,daucus carota,chives,allium schoenoprasum,companion
+925,carrot,daucus carota,coriander,coriandrum sativum,companion
+937,carrot,daucus carota,cucumber,cucumis sativus,companion
+946,carrot,daucus carota,dill,anethum graveolens,companion
+955,carrot,daucus carota,fruit tree,,companion
+958,carrot,daucus carota,leek,allium ampeloprasum var. porrum,companion
+961,carrot,daucus carota,lettuce,lactuca sativa,companion
+976,carrot,daucus carota,marjoram,origanum majorana,companion
+982,carrot,daucus carota,onion,allium cepa,companion
+988,carrot,daucus carota,parsnip,pastinaca sativa,antagonistic
+991,carrot,daucus carota,radish,raphanus sativus,companion
+997,carrot,daucus carota,rue,ruta graveolens,companion
+1000,carrot,daucus carota,tomato,solanum lycopersicum,companion
+1006,cauliﬂower,brassica oleracea var. botrytis,bean,phaseolus,companion
+1008,cauliﬂower,brassica oleracea var. botrytis,beet,beta vulgaris,companion
+1012,cauliﬂower,brassica oleracea var. botrytis,borage,borago officinalis,companion
+1026,cauliﬂower,brassica oleracea var. botrytis,broad bean,vicia faba,companion
+1030,cauliﬂower,brassica oleracea var. botrytis,bush bean,phaseolus vulgaris,companion
+1038,cauliﬂower,brassica oleracea var. botrytis,celery,apium graveolens,companion
+1046,cauliﬂower,brassica oleracea var. botrytis,climbing bean,phaseolus vulgaris,companion
+1054,cauliﬂower,brassica oleracea var. botrytis,coriander,coriandrum sativum,companion
+1062,cauliﬂower,brassica oleracea var. botrytis,cucumber,cucumis sativus,companion
+1068,cauliﬂower,brassica oleracea var. botrytis,dill,anethum graveolens,companion
+1074,cauliﬂower,brassica oleracea var. botrytis,marigold,tagetes,companion
+1076,cauliﬂower,brassica oleracea var. botrytis,marjoram,origanum majorana,companion
+1080,cauliﬂower,brassica oleracea var. botrytis,potato,solanum tuberosum,companion
+1084,cauliﬂower,brassica oleracea var. botrytis,rue,ruta graveolens,antagonistic
+1086,cauliﬂower,brassica oleracea var. botrytis,strawberry,fragaria,antagonistic
+1088,cauliﬂower,brassica oleracea var. botrytis,tomato,solanum lycopersicum,companion
+1092,celery,apium graveolens,bush bean,phaseolus vulgaris,companion
+1108,celery,apium graveolens,cabbage,brassica oleracea,companion
+1112,celery,apium graveolens,dill,anethum graveolens,companion
+1124,celery,apium graveolens,leek,allium ampeloprasum var. porrum,companion
+1128,celery,apium graveolens,marjoram,origanum majorana,companion
+1136,celery,apium graveolens,parsnip,pastinaca sativa,antagonistic
+1140,celery,apium graveolens,potato,solanum tuberosum,antagonistic
+1148,celery,apium graveolens,tomato,solanum lycopersicum,companion
+1156,chamomile,matricaria chamomilla,cabbage,brassica oleracea,companion
+1158,chamomile,matricaria chamomilla,mint,mentha,antagonistic
+1162,cherry,prunus subg. cerasus ,chives,allium schoenoprasum,companion
+1166,cherry,prunus subg. cerasus ,garlic,allium sativum,companion
+1170,cherry,prunus subg. cerasus ,grass,poaceae,antagonistic
+1178,cherry,prunus subg. cerasus ,horseradish,armoracia rusticana,companion
+1182,cherry,prunus subg. cerasus ,lemon balm,melissa officinalis,companion
+1186,cherry,prunus subg. cerasus ,lettuce,lactuca sativa,companion
+1196,cherry,prunus subg. cerasus ,marigold,tagetes,companion
+1198,cherry,prunus subg. cerasus ,mustard,brassica,companion
+1200,cherry,prunus subg. cerasus ,nasturtium,nasturtium,companion
+1204,cherry,prunus subg. cerasus ,potato,solanum tuberosum,antagonistic
+1208,cherry,prunus subg. cerasus ,silverbeet,beta vulgaris var. flavescens,companion
+1210,cherry,prunus subg. cerasus ,spinach,spinacia oleracea,companion
+1212,cherry,prunus subg. cerasus ,tansy,tanacetum vulgare,companion
+1214,cherry,prunus subg. cerasus ,yarrow,achillea millefolium,companion
+1218,chervil,anthriscus cerefolium,coriander,coriandrum sativum,companion
+1226,chervil,anthriscus cerefolium,dill,anethum graveolens,companion
+1232,chervil,anthriscus cerefolium,lettuce,lactuca sativa,companion
+1242,chervil,anthriscus cerefolium,radish,raphanus sativus,companion
+1246,chives,allium schoenoprasum,basil,ocimum basilicum,companion
+1250,chives,allium schoenoprasum,bean,phaseolus,antagonistic
+1252,chives,allium schoenoprasum,broad bean,vicia faba,antagonistic
+1256,chives,allium schoenoprasum,bush bean,phaseolus vulgaris,antagonistic
+1264,chives,allium schoenoprasum,carrot,daucus carota,companion
+1270,chives,allium schoenoprasum,cherry,prunus subg. cerasus ,companion
+1274,chives,allium schoenoprasum,climbing bean,phaseolus vulgaris,antagonistic
+1282,chives,allium schoenoprasum,fruit tree,,companion
+1284,chives,allium schoenoprasum,marjoram,origanum majorana,companion
+1288,chives,allium schoenoprasum,parsley,petroselinum crispum,companion
+1298,chives,allium schoenoprasum,parsnip,pastinaca sativa,companion
+1300,chives,allium schoenoprasum,rose,rosa,companion
+1312,chives,allium schoenoprasum,strawberry,fragaria,companion
+1314,chives,allium schoenoprasum,tomato,solanum lycopersicum,companion
+1318,climbing bean,phaseolus vulgaris,beet,beta vulgaris,antagonistic
+1326,climbing bean,phaseolus vulgaris,cabbage,brassica oleracea,companion
+1330,climbing bean,phaseolus vulgaris,chives,allium schoenoprasum,antagonistic
+1338,climbing bean,phaseolus vulgaris,corn,zea mays,companion
+1374,climbing bean,phaseolus vulgaris,garlic,allium sativum,antagonistic
+1382,climbing bean,phaseolus vulgaris,lettuce,lactuca sativa,companion
+1402,climbing bean,phaseolus vulgaris,marjoram,origanum majorana,companion
+1410,climbing bean,phaseolus vulgaris,onion,allium cepa,antagonistic
+1418,climbing bean,phaseolus vulgaris,radish,raphanus sativus,companion
+1426,climbing bean,phaseolus vulgaris,sunﬂower,helianthus annuus,antagonistic
+1438,corn,zea mays,bean,phaseolus,companion
+1447,corn,zea mays,broad bean,vicia faba,companion
+1465,corn,zea mays,bush bean,phaseolus vulgaris,companion
+1501,corn,zea mays,climbing bean,phaseolus vulgaris,companion
+1537,corn,zea mays,cucumber,cucumis sativus,companion
+1564,corn,zea mays,marjoram,origanum majorana,companion
+1582,corn,zea mays,parsnip,pastinaca sativa,companion
+1591,corn,zea mays,potato,solanum tuberosum,companion
+1609,corn,zea mays,pumpkin,cucurbita pepo,companion
+1654,corn,zea mays,radish,raphanus sativus,companion
+1672,corn,zea mays,zucchini,cucurbita pepo,companion
+1717,cucumber,cucumis sativus,basil,ocimum basilicum,companion
+1723,cucumber,cucumis sativus,bean,phaseolus,companion
+1726,cucumber,cucumis sativus,borage,borago officinalis,companion
+1747,cucumber,cucumis sativus,bush bean,phaseolus vulgaris,companion
+1759,cucumber,cucumis sativus,cabbage,brassica oleracea,companion
+1762,cucumber,cucumis sativus,carrot,daucus carota,companion
+1771,cucumber,cucumis sativus,corn,zea mays,companion
+1798,cucumber,cucumis sativus,dill,anethum graveolens,companion
+1807,cucumber,cucumis sativus,lettuce,lactuca sativa,companion
+1822,cucumber,cucumis sativus,marjoram,origanum majorana,companion
+1828,cucumber,cucumis sativus,nasturtium,nasturtium,companion
+1834,cucumber,cucumis sativus,potato,solanum tuberosum,antagonistic
+1840,cucumber,cucumis sativus,radish,raphanus sativus,companion
+1846,cucumber,cucumis sativus,sage,salvia officinalis,antagonistic
+1852,cucumber,cucumis sativus,sunﬂower,helianthus annuus,companion
+1861,cucumber,cucumis sativus,tansy,tanacetum vulgare,companion
+1864,fennel,foeniculum vulgare,basil,ocimum basilicum,companion
+1876,fennel,foeniculum vulgare,bean,phaseolus,antagonistic
+1882,fennel,foeniculum vulgare,broad bean,vicia faba,antagonistic
+1894,fennel,foeniculum vulgare,coriander,coriandrum sativum,antagonistic
+1918,fennel,foeniculum vulgare,dill,anethum graveolens,companion
+1936,fennel,foeniculum vulgare,lavender,lavandula,antagonistic
+1942,fennel,foeniculum vulgare,tomato,solanum lycopersicum,antagonistic
+1954,fruit tree,,chives,allium schoenoprasum,companion
+1956,fruit tree,,garlic,allium sativum,companion
+1958,fruit tree,,grass,poaceae,antagonistic
+1962,fruit tree,,lemon balm,melissa officinalis,companion
+1964,fruit tree,,marigold,tagetes,companion
+1965,fruit tree,,mustard,brassica,companion
+1966,fruit tree,,nasturtium,nasturtium,companion
+1968,fruit tree,,silverbeet,beta vulgaris var. flavescens,companion
+1969,fruit tree,,spinach,spinacia oleracea,companion
+1970,fruit tree,,tansy,tanacetum vulgare,companion
+1971,fruit tree,,yarrow,achillea millefolium,companion
+1973,garlic,allium sativum,apricot,prunus armeniaca,companion
+1987,garlic,allium sativum,bean,phaseolus,antagonistic
+1989,garlic,allium sativum,broad bean,vicia faba,antagonistic
+1993,garlic,allium sativum,bush bean,phaseolus vulgaris,antagonistic
+2001,garlic,allium sativum,cabbage,brassica oleracea,antagonistic
+2003,garlic,allium sativum,chervil,anthriscus cerefolium,companion
+2007,garlic,allium sativum,climbing bean,phaseolus vulgaris,antagonistic
+2015,garlic,allium sativum,fruit tree,,companion
+2017,garlic,allium sativum,lavender,lavandula,companion
+2019,garlic,allium sativum,rosemary,salvia rosmarinus,companion
+2025,garlic,allium sativum,rose,rosa,companion
+2037,garlic,allium sativum,sunﬂower,helianthus annuus,antagonistic
+2043,grape vine,vitis vinifera,bean,phaseolus,companion
+2052,grape vine,vitis vinifera,mustard,brassica,companion
+2061,grape vine,vitis vinifera,tansy,tanacetum vulgare,companion
+2070,grape vine,vitis vinifera,tomato,solanum lycopersicum,companion
+2088,grape vine,vitis vinifera,yarrow,achillea millefolium,companion
+2106,lettuce,lactuca sativa,bean,phaseolus,companion
+2111,lettuce,lactuca sativa,beet,beta vulgaris,companion
+2121,lettuce,lactuca sativa,broad bean,vicia faba,companion
+2131,lettuce,lactuca sativa,cabbage,brassica oleracea,companion
+2136,lettuce,lactuca sativa,carrot,daucus carota,companion
+2151,lettuce,lactuca sativa,cherry,prunus subg. cerasus ,companion
+2161,lettuce,lactuca sativa,chervil,anthriscus cerefolium,companion
+2171,lettuce,lactuca sativa,climbing bean,phaseolus vulgaris,companion
+2191,lettuce,lactuca sativa,cucumber,cucumis sativus,companion
+2206,lettuce,lactuca sativa,marigold,tagetes,companion
+2211,lettuce,lactuca sativa,marjoram,origanum majorana,companion
+2221,lettuce,lactuca sativa,onion,allium cepa,companion
+2231,lettuce,lactuca sativa,parsley,petroselinum crispum,antagonistic
+2256,lettuce,lactuca sativa,parsnip,pastinaca sativa,companion
+2261,lettuce,lactuca sativa,radish,raphanus sativus,companion
+2271,lettuce,lactuca sativa,strawberry,fragaria,companion
+2276,marigold,tagetes,apricot,prunus armeniaca,companion
+2283,marigold,tagetes,bean,phaseolus,companion
+2284,marigold,tagetes,cabbage,brassica oleracea,companion
+2285,marigold,tagetes,carrot,daucus carota,companion
+2288,marigold,tagetes,cherry,prunus subg. cerasus ,companion
+2290,marigold,tagetes,fruit tree,,companion
+2291,marigold,tagetes,lettuce,lactuca sativa,companion
+2296,marigold,tagetes,potato,solanum tuberosum,companion
+2298,marigold,tagetes,raspberry,rubus idaeus,companion
+2302,marigold,tagetes,rose,rosa,companion
+2308,marigold,tagetes,strawberry,fragaria,companion
+2309,marigold,tagetes,tomato,solanum lycopersicum,companion
+2311,marjoram,origanum majorana,asparagus,asparagus officinalis,companion
+2315,marjoram,origanum majorana,bean,phaseolus,companion
+2317,marjoram,origanum majorana,beet,beta vulgaris,companion
+2321,marjoram,origanum majorana,broad bean,vicia faba,companion
+2325,marjoram,origanum majorana,bush bean,phaseolus vulgaris,companion
+2333,marjoram,origanum majorana,cabbage,brassica oleracea,companion
+2335,marjoram,origanum majorana,carrot,daucus carota,companion
+2341,marjoram,origanum majorana,celery,apium graveolens,companion
+2349,marjoram,origanum majorana,chives,allium schoenoprasum,companion
+2353,marjoram,origanum majorana,climbing bean,phaseolus vulgaris,companion
+2361,marjoram,origanum majorana,corn,zea mays,companion
+2379,marjoram,origanum majorana,cucumber,cucumis sativus,companion
+2385,marjoram,origanum majorana,eggplant,solanum melongena,companion
+2387,marjoram,origanum majorana,lavender,lavandula,companion
+2389,marjoram,origanum majorana,leek,allium ampeloprasum var. porrum,companion
+2391,marjoram,origanum majorana,lettuce,lactuca sativa,companion
+2401,marjoram,origanum majorana,onion,allium cepa,companion
+2405,marjoram,origanum majorana,parsnip,pastinaca sativa,companion
+2407,marjoram,origanum majorana,potato,solanum tuberosum,companion
+2411,marjoram,origanum majorana,pumpkin,cucurbita pepo,companion
+2421,marjoram,origanum majorana,radish,raphanus sativus,companion
+2425,marjoram,origanum majorana,shallot,allium ascalonicum,companion
+2427,marjoram,origanum majorana,silverbeet,beta vulgaris var. flavescens,companion
+2429,marjoram,origanum majorana,spinach,spinacia oleracea,companion
+2431,marjoram,origanum majorana,tomato,solanum lycopersicum,companion
+2435,marjoram,origanum majorana,zucchini,cucurbita pepo,companion
+2445,mulberry,morus,chives,allium schoenoprasum,companion
+2449,mulberry,morus,garlic,allium sativum,companion
+2453,mulberry,morus,grape vine,vitis vinifera,companion
+2471,mulberry,morus,grass,poaceae,companion
+2479,mulberry,morus,lemon balm,melissa officinalis,companion
+2483,mulberry,morus,marigold,tagetes,companion
+2485,mulberry,morus,mustard,brassica,companion
+2487,mulberry,morus,nasturtium,nasturtium,companion
+2491,mulberry,morus,silverbeet,beta vulgaris var. flavescens,companion
+2493,mulberry,morus,spinach,spinacia oleracea,companion
+2495,mulberry,morus,tansy,tanacetum vulgare,companion
+2497,mulberry,morus,yarrow,achillea millefolium,companion
+2501,nasturtium,nasturtium,apricot,prunus armeniaca,companion
+2515,nasturtium,nasturtium,cabbage,brassica oleracea,companion
+2517,nasturtium,nasturtium,cherry,prunus subg. cerasus ,companion
+2521,nasturtium,nasturtium,cucumber,cucumis sativus,companion
+2527,nasturtium,nasturtium,fruit tree,,companion
+2529,nasturtium,nasturtium,potato,solanum tuberosum,companion
+2533,nasturtium,nasturtium,radish,raphanus sativus,companion
+2537,nasturtium,nasturtium,rose,rosa,companion
+2549,nasturtium,nasturtium,tomato,solanum lycopersicum,companion
+2553,nasturtium,nasturtium,zucchini,cucurbita pepo,companion
+2563,onion,allium cepa,bean,phaseolus,antagonistic
+2565,onion,allium cepa,beet,beta vulgaris,companion
+2569,onion,allium cepa,broad bean,vicia faba,antagonistic
+2573,onion,allium cepa,bush bean,phaseolus vulgaris,antagonistic
+2581,onion,allium cepa,cabbage,brassica oleracea,companion
+2583,onion,allium cepa,carrot,daucus carota,companion
+2589,onion,allium cepa,climbing bean,phaseolus vulgaris,antagonistic
+2597,onion,allium cepa,leek,allium ampeloprasum var. porrum,companion
+2599,onion,allium cepa,lettuce,lactuca sativa,companion
+2609,onion,allium cepa,marjoram,origanum majorana,companion
+2613,onion,allium cepa,parsley,petroselinum crispum,companion
+2623,onion,allium cepa,parsnip,pastinaca sativa,companion
+2625,onion,allium cepa,rose,rosa,companion
+2637,onion,allium cepa,silverbeet,beta vulgaris var. flavescens,companion
+2639,onion,allium cepa,strawberry,fragaria,companion
+2641,onion,allium cepa,tomato,solanum lycopersicum,companion
+2645,parsley,petroselinum crispum,asparagus,asparagus officinalis,companion
+2655,parsley,petroselinum crispum,bean,phaseolus,companion
+2660,parsley,petroselinum crispum,chervil,anthriscus cerefolium,companion
+2670,parsley,petroselinum crispum,lettuce,lactuca sativa,antagonistic
+2695,parsley,petroselinum crispum,mint,mentha,antagonistic
+2705,parsley,petroselinum crispum,onion,allium cepa,companion
+2715,parsley,petroselinum crispum,rose,rosa,companion
+2745,parsley,petroselinum crispum,tomato,solanum lycopersicum,companion
+2755,pea,pisum sativum,bean,phaseolus,companion
+2759,pea,pisum sativum,borage,borago officinalis,companion
+2787,pea,pisum sativum,cabbage,brassica oleracea,companion
+2791,pea,pisum sativum,carrot,daucus carota,companion
+2803,pea,pisum sativum,celery,apium graveolens,companion
+2819,pea,pisum sativum,chives,allium schoenoprasum,antagonistic
+2827,pea,pisum sativum,corn,zea mays,companion
+2863,pea,pisum sativum,cucumber,cucumis sativus,companion
+2875,pea,pisum sativum,garlic,allium sativum,antagonistic
+2883,pea,pisum sativum,lettuce,lactuca sativa,companion
+2903,pea,pisum sativum,marjoram,origanum majorana,companion
+2911,pea,pisum sativum,onion,allium cepa,antagonistic
+2919,pea,pisum sativum,parsnip,pastinaca sativa,companion
+2923,pea,pisum sativum,potato,solanum tuberosum,companion
+2931,pea,pisum sativum,raspberry,rubus idaeus,companion
+2947,pea,pisum sativum,sage,salvia officinalis,companion
+2955,pea,pisum sativum,shallot,allium ascalonicum,antagonistic
+2959,pennyroyal,mentha pulegium,cabbage,brassica oleracea,companion
+2960,potato,solanum tuberosum,bean,phaseolus,companion
+2962,potato,solanum tuberosum,beet,beta vulgaris,companion
+2966,potato,solanum tuberosum,broad bean,vicia faba,companion
+2970,potato,solanum tuberosum,bush bean,phaseolus vulgaris,companion
+2978,potato,solanum tuberosum,cabbage,brassica oleracea,companion
+2980,potato,solanum tuberosum,celery,apium graveolens,antagonistic
+2988,potato,solanum tuberosum,cherry,prunus subg. cerasus ,antagonistic
+2992,potato,solanum tuberosum,corn,zea mays,companion
+3010,potato,solanum tuberosum,cucumber,cucumis sativus,antagonistic
+3016,potato,solanum tuberosum,eggplant,solanum melongena,companion
+3018,potato,solanum tuberosum,horseradish,armoracia rusticana,companion
+3022,potato,solanum tuberosum,marjoram,origanum majorana,companion
+3026,potato,solanum tuberosum,nasturtium,nasturtium,companion
+3030,potato,solanum tuberosum,parsnip,pastinaca sativa,companion
+3032,potato,solanum tuberosum,pumpkin,cucurbita pepo,antagonistic
+3042,potato,solanum tuberosum,raspberry,rubus idaeus,antagonistic
+3050,potato,solanum tuberosum,rosemary,salvia rosmarinus,antagonistic
+3056,potato,solanum tuberosum,sunﬂower,helianthus annuus,antagonistic
+3062,potato,solanum tuberosum,tomato,solanum lycopersicum,antagonistic
+3066,pumpkin,cucurbita pepo,corn,zea mays,companion
+3111,pumpkin,cucurbita pepo,marjoram,origanum majorana,companion
+3121,radish,raphanus sativus,carrot,daucus carota,companion
+3127,radish,raphanus sativus,chervil,anthriscus cerefolium,companion
+3131,radish,raphanus sativus,climbing bean,phaseolus vulgaris,companion
+3139,radish,raphanus sativus,corn,zea mays,companion
+3157,radish,raphanus sativus,cucumber,cucumis sativus,companion
+3163,radish,raphanus sativus,lettuce,lactuca sativa,companion
+3173,radish,raphanus sativus,marjoram,origanum majorana,companion
+3177,radish,raphanus sativus,nasturtium,nasturtium,companion
+3181,radish,raphanus sativus,parsnip,pastinaca sativa,companion
+3183,rosemary,salvia rosmarinus,bean,phaseolus,companion
+3186,rosemary,salvia rosmarinus,cabbage,brassica oleracea,companion
+3189,rosemary,salvia rosmarinus,carrot,daucus carota,companion
+3198,rosemary,salvia rosmarinus,garlic,allium sativum,companion
+3204,rosemary,salvia rosmarinus,parsley,petroselinum crispum,companion
+3219,rosemary,salvia rosmarinus,sage,salvia officinalis,companion
+3225,rosemary,salvia rosmarinus,tomato,solanum lycopersicum,antagonistic
+3231,rose,rosa,chives,allium schoenoprasum,companion
+3243,rose,rosa,garlic,allium sativum,companion
+3255,rose,rosa,horseradish,armoracia rusticana,companion
+3267,rose,rosa,lavender,lavandula,companion
+3273,rose,rosa,lemon balm,melissa officinalis,companion
+3285,rose,rosa,marigold,tagetes,companion
+3291,rose,rosa,nasturtium,nasturtium,companion
+3303,rose,rosa,onion,allium cepa,companion
+3315,rose,rosa,parsley,petroselinum crispum,companion
+3345,rose,rosa,rue,ruta graveolens,companion
+3351,rose,rosa,sage,salvia officinalis,companion
+3363,rose,rosa,tansy,tanacetum vulgare,companion
+3369,rose,rosa,thyme,thymus vulgaris,companion
+3381,rue,ruta graveolens,basil,ocimum basilicum,antagonistic
+3383,rue,ruta graveolens,cabbage,brassica oleracea,antagonistic
+3384,rue,ruta graveolens,raspberry,rubus idaeus,companion
+3388,rue,ruta graveolens,rose,rosa,companion
+3394,rue,ruta graveolens,sage,salvia officinalis,antagonistic
+3396,sage,salvia officinalis,bean,phaseolus,companion
+3398,sage,salvia officinalis,cabbage,brassica oleracea,companion
+3400,sage,salvia officinalis,carrot,daucus carota,companion
+3406,sage,salvia officinalis,cucumber,cucumis sativus,antagonistic
+3412,sage,salvia officinalis,grass,poaceae,antagonistic
+3420,sage,salvia officinalis,parsnip,pastinaca sativa,companion
+3422,sage,salvia officinalis,rosemary,salvia rosmarinus,companion
+3428,sage,salvia officinalis,rose,rosa,companion
+3440,sage,salvia officinalis,rue,ruta graveolens,antagonistic
+3442,sage,salvia officinalis,strawberry,fragaria,companion
+3444,savory,satureja,bean,phaseolus,companion
+3445,savory,satureja,onion,allium cepa,companion
+3447,silverbeet,beta vulgaris var. flavescens,basil,ocimum basilicum,antagonistic
+3449,silverbeet,beta vulgaris var. flavescens,beet,beta vulgaris,companion
+3451,silverbeet,beta vulgaris var. flavescens,cherry,prunus subg. cerasus ,companion
+3453,silverbeet,beta vulgaris var. flavescens,fruit tree,,companion
+3454,silverbeet,beta vulgaris var. flavescens,lavender,lavandula,companion
+3455,silverbeet,beta vulgaris var. flavescens,marjoram,origanum majorana,companion
+3457,silverbeet,beta vulgaris var. flavescens,onion,allium cepa,companion
+3459,spinach,spinacia oleracea,apricot,prunus armeniaca,companion
+3466,spinach,spinacia oleracea,broad bean,vicia faba,companion
+3468,spinach,spinacia oleracea,cherry,prunus subg. cerasus ,companion
+3470,spinach,spinacia oleracea,fruit tree,,companion
+3471,spinach,spinacia oleracea,marjoram,origanum majorana,companion
+3473,spinach,spinacia oleracea,strawberry,fragaria,companion
+3474,squash,cucurbita,borage,borago officinalis,companion
+3481,squash,cucurbita,corn,zea mays,companion
+3490,squash,cucurbita,marjoram,origanum majorana,companion
+3492,squash,cucurbita,nasturtium,nasturtium,companion
+3494,squash,cucurbita,sunﬂower,helianthus annuus,companion
+3497,squash,cucurbita,tansy,tanacetum vulgare,companion
+3498,stinging nettle,urtica dioica,apricot,prunus armeniaca,companion
+3533,stinging nettle,urtica dioica,fruit tree,,companion
+3538,stinging nettle,urtica dioica,horseradish,armoracia rusticana,companion
+3548,stinging nettle,urtica dioica,tomato,solanum lycopersicum,companion
+3558,strawberry,fragaria,borage,borago officinalis,companion
+3565,strawberry,fragaria,bush bean,phaseolus vulgaris,companion
+3569,strawberry,fragaria,cabbage,brassica oleracea,antagonistic
+3570,strawberry,fragaria,chives,allium schoenoprasum,companion
+3572,strawberry,fragaria,garlic,allium sativum,antagonistic
+3574,strawberry,fragaria,lavender,lavandula,companion
+3575,strawberry,fragaria,lettuce,lactuca sativa,companion
+3580,strawberry,fragaria,marigold,tagetes,companion
+3581,strawberry,fragaria,onion,allium cepa,companion
+3583,strawberry,fragaria,sage,salvia officinalis,companion
+3585,strawberry,fragaria,spinach,spinacia oleracea,companion
+3586,sunﬂower,helianthus annuus,apricot,prunus armeniaca,companion
+3607,sunﬂower,helianthus annuus,bush bean,phaseolus vulgaris,companion
+3619,sunﬂower,helianthus annuus,climbing bean,phaseolus vulgaris,antagonistic
+3631,sunﬂower,helianthus annuus,cucumber,cucumis sativus,companion
+3640,tomato,solanum lycopersicum,apricot,prunus armeniaca,antagonistic
+3654,tomato,solanum lycopersicum,asparagus,asparagus officinalis,companion
+3658,tomato,solanum lycopersicum,basil,ocimum basilicum,companion
+3662,tomato,solanum lycopersicum,beet,beta vulgaris,antagonistic
+3666,tomato,solanum lycopersicum,borage,borago officinalis,companion
+3680,tomato,solanum lycopersicum,cabbage,brassica oleracea,antagonistic
+3682,tomato,solanum lycopersicum,carrot,daucus carota,companion
+3688,tomato,solanum lycopersicum,celery,apium graveolens,companion
+3696,tomato,solanum lycopersicum,chives,allium schoenoprasum,companion
+3700,tomato,solanum lycopersicum,dill,anethum graveolens,companion
+3706,tomato,solanum lycopersicum,fennel,foeniculum vulgare,antagonistic
+3718,tomato,solanum lycopersicum,gooseberry,ribes uva-crispa,companion
+3722,tomato,solanum lycopersicum,grape vine,vitis vinifera,companion
+3740,tomato,solanum lycopersicum,marigold,tagetes,companion
+3742,tomato,solanum lycopersicum,marjoram,origanum majorana,companion
+3746,tomato,solanum lycopersicum,mint,mentha,companion
+3750,tomato,solanum lycopersicum,nasturtium,nasturtium,companion
+3754,tomato,solanum lycopersicum,onion,allium cepa,companion
+3758,tomato,solanum lycopersicum,parsley,petroselinum crispum,companion
+3768,tomato,solanum lycopersicum,parsnip,pastinaca sativa,companion
+3770,tomato,solanum lycopersicum,rosemary,salvia rosmarinus,antagonistic
+3776,yarrow,achillea millefolium,apricot,prunus armeniaca,companion
+3790,yarrow,achillea millefolium,chervil,anthriscus cerefolium,companion
+3794,yarrow,achillea millefolium,fruit tree,,companion
+3796,yarrow,achillea millefolium,grape vine,vitis vinifera,companion
+3814,yarrow,achillea millefolium,grass,poaceae,companion
+3822,yarrow,achillea millefolium,tansy,tanacetum vulgare,companion
+3824,zucchini,cucurbita pepo,corn,zea mays,companion
+3869,zucchini,cucurbita pepo,marjoram,origanum majorana,companion
+3879,zucchini,cucurbita pepo,nasturtium,nasturtium,companion

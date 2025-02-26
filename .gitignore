@@ -43,3 +43,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+example/copla/Untitled.ipynb
+example/copla/.ipynb_checkpoints/Untitled-checkpoint.ipynb

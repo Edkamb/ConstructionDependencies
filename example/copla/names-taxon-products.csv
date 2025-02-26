@@ -1,0 +1,190 @@
+,taxon,plantCommonName,plantWikidata,productCommonName,productWikidata
+0,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grape,http://www.wikidata.org/entity/q10978
+1,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grapevine leaf (red),http://www.wikidata.org/entity/q96098211
+2,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grape skin,http://www.wikidata.org/entity/q107263043
+3,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grapevine flower,http://www.wikidata.org/entity/q107263044
+4,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grape seed oil,http://www.wikidata.org/entity/q898982
+5,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grapevine shoot tip,http://www.wikidata.org/entity/q107263045
+6,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,raisin puree,http://www.wikidata.org/entity/q110611286
+7,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grape seed,http://www.wikidata.org/entity/q4013015
+8,vitis vinifera,grape vine,http://www.wikidata.org/entity/q30046,grape leaves,http://www.wikidata.org/entity/q4820063
+9,pisum sativum,peas,http://www.wikidata.org/entity/q25237,pea skin,http://www.wikidata.org/entity/q107263052
+10,pisum sativum,peas,http://www.wikidata.org/entity/q25237,pea blossom,http://www.wikidata.org/entity/q107263051
+11,pisum sativum,peas,http://www.wikidata.org/entity/q25237,pea,http://www.wikidata.org/entity/q29472543
+12,pisum sativum,peas,http://www.wikidata.org/entity/q25237,peapod,http://www.wikidata.org/entity/q110611304
+13,petroselinum crispum,parsley,http://www.wikidata.org/entity/q25284,parsley,http://www.wikidata.org/entity/q65522500
+14,petroselinum crispum,parsley,http://www.wikidata.org/entity/q25284,parsley seed oil,http://www.wikidata.org/entity/q72499557
+15,petroselinum crispum,parsley,http://www.wikidata.org/entity/q25284,parsley root,http://www.wikidata.org/entity/q68220931
+16,petroselinum crispum,parsley,http://www.wikidata.org/entity/q25284,parsley oil,http://www.wikidata.org/entity/q104034852
+17,petroselinum crispum,parsley,http://www.wikidata.org/entity/q25284,parsley seed,http://www.wikidata.org/entity/q96756023
+18,origanum majorana,marjoram,http://www.wikidata.org/entity/q22694,marjoram oil,http://www.wikidata.org/entity/q72488245
+19,origanum majorana,marjoram,http://www.wikidata.org/entity/q22694,marjoram (herb),http://www.wikidata.org/entity/q96181239
+20,allium cepa,onions,http://www.wikidata.org/entity/q23485,onion juice,http://www.wikidata.org/entity/q104176807
+21,allium cepa,onions,http://www.wikidata.org/entity/q23485,onion,http://www.wikidata.org/entity/q3406628
+22,ribes uva-crispa,gooseberry,http://www.wikidata.org/entity/q41503,gooseberry,http://www.wikidata.org/entity/q17638951
+23,ribes uva-crispa,gooseberry,http://www.wikidata.org/entity/q41503,gooseberry juice,http://www.wikidata.org/entity/q103996504
+24,asparagus officinalis,asparagus,http://www.wikidata.org/entity/q28367,asparagus,http://www.wikidata.org/entity/q23041045
+25,asparagus officinalis,asparagus,http://www.wikidata.org/entity/q28367,asparagus spear,http://www.wikidata.org/entity/q115245691
+26,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,apricot wood,http://www.wikidata.org/entity/q110785991
+27,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,apricot kernel,http://www.wikidata.org/entity/q165527
+28,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,apricot,http://www.wikidata.org/entity/q3733836
+29,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,apricot oil,http://www.wikidata.org/entity/q621880
+30,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,apricot juice,http://www.wikidata.org/entity/q3337673
+31,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,armeniacae semen,http://www.wikidata.org/entity/q27584859
+32,prunus armeniaca,apricot,http://www.wikidata.org/entity/q37453,prunus armeniaca,http://www.wikidata.org/entity/q37453
+33,matricaria chamomilla,chamomile,http://www.wikidata.org/entity/q28437,camomile oil,http://www.wikidata.org/entity/q1103862
+34,matricaria chamomilla,chamomile,http://www.wikidata.org/entity/q28437,matricaria flower,http://www.wikidata.org/entity/q96312550
+35,cucumis sativus,cucumber,http://www.wikidata.org/entity/q23425,znojmo cucumber,http://www.wikidata.org/entity/q217962
+36,cucumis sativus,cucumber,http://www.wikidata.org/entity/q23425,cucumber,http://www.wikidata.org/entity/q2735883
+37,cucumis sativus,cucumber,http://www.wikidata.org/entity/q23425,cucumber seed,http://www.wikidata.org/entity/q103748177
+38,zea mays,corn,http://www.wikidata.org/entity/q11575,corn stover,http://www.wikidata.org/entity/q12208391
+39,zea mays,corn,http://www.wikidata.org/entity/q11575,corn kernel,http://www.wikidata.org/entity/q3936020
+40,zea mays,corn,http://www.wikidata.org/entity/q11575,corn on the cob,http://www.wikidata.org/entity/q5171058
+41,zea mays,corn,http://www.wikidata.org/entity/q11575,corn husks,http://www.wikidata.org/entity/q91518598
+42,zea mays,corn,http://www.wikidata.org/entity/q11575,corn oil,http://www.wikidata.org/entity/q856775
+43,zea mays,corn,http://www.wikidata.org/entity/q11575,maize,http://www.wikidata.org/entity/q25618328
+44,zea mays,corn,http://www.wikidata.org/entity/q11575,maize straw,http://www.wikidata.org/entity/q111146316
+45,zea mays,corn,http://www.wikidata.org/entity/q11575,corncob,http://www.wikidata.org/entity/q1885918
+46,zea mays,corn,http://www.wikidata.org/entity/q11575,corn starch,http://www.wikidata.org/entity/q3393961
+47,coriandrum sativum,coriander,http://www.wikidata.org/entity/q41611,coriander seed oil,http://www.wikidata.org/entity/q1118978
+49,coriandrum sativum,coriander,http://www.wikidata.org/entity/q41611,coriander seed,http://www.wikidata.org/entity/q20856764
+51,coriandrum sativum,coriander,http://www.wikidata.org/entity/q41611,coriander extract,http://www.wikidata.org/entity/q72461489
+53,coriandrum sativum,coriander,http://www.wikidata.org/entity/q41611,cilantro,http://www.wikidata.org/entity/q65523167
+55,achillea millefolium,yarrow,http://www.wikidata.org/entity/q25408,millefolii flos,http://www.wikidata.org/entity/q96069000
+56,achillea millefolium,yarrow,http://www.wikidata.org/entity/q25408,yarrow oil,http://www.wikidata.org/entity/q8049575
+57,solanum melongena,eggplant,http://www.wikidata.org/entity/q7540,eggplant,http://www.wikidata.org/entity/q12533094
+58,ocimum basilicum,basil,http://www.wikidata.org/entity/q38859,basil,http://www.wikidata.org/entity/q65522654
+59,ocimum basilicum,basil,http://www.wikidata.org/entity/q38859,genovese basil,http://www.wikidata.org/entity/q1061638
+60,apium graveolens,celery,http://www.wikidata.org/entity/q28298,celery seed,http://www.wikidata.org/entity/q102256772
+61,apium graveolens,celery,http://www.wikidata.org/entity/q28298,celery seed oil,http://www.wikidata.org/entity/q72516622
+62,apium graveolens,celery,http://www.wikidata.org/entity/q28298,celery juice,http://www.wikidata.org/entity/q104176881
+63,apium graveolens,celery,http://www.wikidata.org/entity/q28298,celery,http://www.wikidata.org/entity/q23012379
+64,solanum tuberosum,potatoes,http://www.wikidata.org/entity/q10998,potato starch,http://www.wikidata.org/entity/q715160
+65,solanum tuberosum,potato,http://www.wikidata.org/entity/q10998,potato starch,http://www.wikidata.org/entity/q715160
+66,solanum tuberosum,potatoes,http://www.wikidata.org/entity/q10998,potato,http://www.wikidata.org/entity/q16587531
+67,solanum tuberosum,potato,http://www.wikidata.org/entity/q10998,potato,http://www.wikidata.org/entity/q16587531
+68,fragaria,strawberries,http://www.wikidata.org/entity/q745,strawberry,http://www.wikidata.org/entity/q14458220
+69,fragaria,strawberry,http://www.wikidata.org/entity/q745,strawberry,http://www.wikidata.org/entity/q14458220
+70,anethum graveolens,dill,http://www.wikidata.org/entity/q26686,dill oil,http://www.wikidata.org/entity/q5276849
+72,anethum graveolens,dill,http://www.wikidata.org/entity/q26686,dill seed oil,http://www.wikidata.org/entity/q102252650
+74,anethum graveolens,dill,http://www.wikidata.org/entity/q26686,dill,http://www.wikidata.org/entity/q59659860
+76,armoracia rusticana,horseradish,http://www.wikidata.org/entity/q26545,horseradish root,http://www.wikidata.org/entity/q2964630
+77,armoracia rusticana,horseradish,http://www.wikidata.org/entity/q26545,horseradish greens,http://www.wikidata.org/entity/q107307344
+78,rosa,roses,http://www.wikidata.org/entity/q34687,rose leaf,http://www.wikidata.org/entity/q110611285
+79,rosa,roses,http://www.wikidata.org/entity/q34687,rose oil,http://www.wikidata.org/entity/q83054
+80,rosa,roses,http://www.wikidata.org/entity/q34687,rose hip,http://www.wikidata.org/entity/q46740
+81,rosa,roses,http://www.wikidata.org/entity/q34687,rose juice,http://www.wikidata.org/entity/q107307367
+82,rosa,roses,http://www.wikidata.org/entity/q34687,rose hip seed,http://www.wikidata.org/entity/q113325867
+83,rosa,roses,http://www.wikidata.org/entity/q34687,rose vinegar,http://www.wikidata.org/entity/q110611181
+84,brassica oleracea var. botrytis,cauliﬂower,http://www.wikidata.org/entity/q7537,caulilini,http://www.wikidata.org/entity/q106815124
+85,brassica oleracea var. botrytis,cauliﬂower,http://www.wikidata.org/entity/q7537,cauliflower,http://www.wikidata.org/entity/q23900272
+86,solanum lycopersicum,tomato,http://www.wikidata.org/entity/q23501,tomato juice,http://www.wikidata.org/entity/q787325
+87,solanum lycopersicum,tomato,http://www.wikidata.org/entity/q23501,tomato,http://www.wikidata.org/entity/q20638126
+88,allium sativum,garlic,http://www.wikidata.org/entity/q23400,garlic,http://www.wikidata.org/entity/q21546392
+89,allium sativum,garlic,http://www.wikidata.org/entity/q23400,garlic oil,http://www.wikidata.org/entity/q72480094
+90,helianthus annuus,sunﬂower,http://www.wikidata.org/entity/q171497,sunflower lecithin,http://www.wikidata.org/entity/q57271747
+91,helianthus annuus,sunﬂower,http://www.wikidata.org/entity/q171497,sunflower seed,http://www.wikidata.org/entity/q1076906
+92,helianthus annuus,sunﬂower,http://www.wikidata.org/entity/q171497,sunflower oil,http://www.wikidata.org/entity/q94787
+93,raphanus sativus,radish,http://www.wikidata.org/entity/q7224565,radish sprout,http://www.wikidata.org/entity/q46700169
+94,raphanus sativus,radish,http://www.wikidata.org/entity/q7224565,radish,http://www.wikidata.org/entity/q33669098
+95,foeniculum vulgare,fennel,http://www.wikidata.org/entity/q43511,organic fennel seed,http://www.wikidata.org/entity/q112608074
+96,foeniculum vulgare,fennel,http://www.wikidata.org/entity/q43511,fennel root,http://www.wikidata.org/entity/q110611158
+97,foeniculum vulgare,fennel,http://www.wikidata.org/entity/q43511,fennel fruit,http://www.wikidata.org/entity/q27658833
+98,foeniculum vulgare,fennel,http://www.wikidata.org/entity/q43511,fennel oil,http://www.wikidata.org/entity/q1470519
+99,foeniculum vulgare,fennel,http://www.wikidata.org/entity/q43511,fennel bulb,http://www.wikidata.org/entity/q115618652
+100,foeniculum vulgare,fennel,http://www.wikidata.org/entity/q43511,fennel,http://www.wikidata.org/entity/q104005460
+101,malus domestica,apple,http://www.wikidata.org/entity/q18674606,apple seed,http://www.wikidata.org/entity/q100353572
+102,malus domestica,apple,http://www.wikidata.org/entity/q18674606,apple peel,http://www.wikidata.org/entity/q103534317
+103,malus domestica,apple,http://www.wikidata.org/entity/q18674606,apple seed oil,http://www.wikidata.org/entity/q4781286
+104,malus domestica,apple,http://www.wikidata.org/entity/q18674606,apple,http://www.wikidata.org/entity/q89
+105,malus domestica,apple,http://www.wikidata.org/entity/q18674606,apple wood,http://www.wikidata.org/entity/q62474609
+106,malus domestica,apple,http://www.wikidata.org/entity/q18674606,grünling,http://www.wikidata.org/entity/q110611298
+107,vicia faba,broad beans,http://www.wikidata.org/entity/q131342,broad bean blossom,http://www.wikidata.org/entity/q110611111
+108,vicia faba,broad beans,http://www.wikidata.org/entity/q131342,broad bean,http://www.wikidata.org/entity/q61672189
+109,lactuca sativa,lettuce,http://www.wikidata.org/entity/q83193,little gem lettuce,http://www.wikidata.org/entity/q66604108
+110,lactuca sativa,lettuce,http://www.wikidata.org/entity/q83193,lettuce,http://www.wikidata.org/entity/q104666136
+111,lactuca sativa,lettuce,http://www.wikidata.org/entity/q83193,iceberg lettuce,http://www.wikidata.org/entity/q1310886
+112,lactuca sativa,lettuce,http://www.wikidata.org/entity/q83193,lactuca sativa var. capitata,http://www.wikidata.org/entity/q11853965
+113,lactuca sativa,lettuce,http://www.wikidata.org/entity/q83193,lactuca sativa var. crispa,http://www.wikidata.org/entity/q2248133
+114,prunus subg. cerasus ,cherry,http://www.wikidata.org/entity/q2946681,q28870510,http://www.wikidata.org/entity/q28870510
+115,prunus subg. cerasus ,cherry,http://www.wikidata.org/entity/q2946681,cherry,http://www.wikidata.org/entity/q196
+116,allium schoenoprasum,chives,http://www.wikidata.org/entity/q51148,chives,http://www.wikidata.org/entity/q61046162
+117,allium schoenoprasum,chives,http://www.wikidata.org/entity/q51148,edible plant,http://www.wikidata.org/entity/q9323487
+118,brassica oleracea var. italica,broccoli,http://www.wikidata.org/entity/q47722,broccoli,http://www.wikidata.org/entity/q57544960
+119,brassica oleracea var. italica,broccoli,http://www.wikidata.org/entity/q47722,broccoli sprouts,http://www.wikidata.org/entity/q17163130
+120,daucus carota,carrots,http://www.wikidata.org/entity/q11678009,carrot seed oil,http://www.wikidata.org/entity/q1734304
+121,daucus carota,carrots,http://www.wikidata.org/entity/q11678009,carrot,http://www.wikidata.org/entity/q81
+122,daucus carota,carrots,http://www.wikidata.org/entity/q11678009,carrot seed,http://www.wikidata.org/entity/q104057199
+123,morus,mulberry,http://www.wikidata.org/entity/q44789,mulberry,http://www.wikidata.org/entity/q11113119
+124,morus,mulberry,http://www.wikidata.org/entity/q44789,mulberry wood,http://www.wikidata.org/entity/q110807092
+125,allium ampeloprasum var. porrum,leeks,http://www.wikidata.org/entity/q33681353,leek,http://www.wikidata.org/entity/q1807269
+126,melissa officinalis,lemon balm,http://www.wikidata.org/entity/q148396,melissa seed oil,http://www.wikidata.org/entity/q55815430
+127,melissa officinalis,lemon balm,http://www.wikidata.org/entity/q148396,melissa leaf,http://www.wikidata.org/entity/q96312592
+128,salvia officinalis,sage,http://www.wikidata.org/entity/q1111359,sage leaf,http://www.wikidata.org/entity/q96110429
+129,salvia officinalis,sage,http://www.wikidata.org/entity/q1111359,dalmatian sage oil,http://www.wikidata.org/entity/q1226356
+130,salvia rosmarinus,rosemary,http://www.wikidata.org/entity/q102240169,rosemary oil,http://www.wikidata.org/entity/q1251367
+131,salvia rosmarinus,rosemary,http://www.wikidata.org/entity/q102240169,extracts of rosemary,http://www.wikidata.org/entity/q42807504
+132,salvia rosmarinus,rosemary,http://www.wikidata.org/entity/q102240169,rosemary,http://www.wikidata.org/entity/q68315046
+133,anthriscus cerefolium,chervil,http://www.wikidata.org/entity/q218462,chervil,http://www.wikidata.org/entity/q21281535
+134,anthriscus cerefolium,chervil,http://www.wikidata.org/entity/q218462,chevril oil,http://www.wikidata.org/entity/q106730022
+135,allium ascalonicum,shallots,http://www.wikidata.org/entity/q193498,shallot,http://www.wikidata.org/entity/q67206407
+136,beta vulgaris var. flavescens,silverbeet,http://www.wikidata.org/entity/q99730767,chard,http://www.wikidata.org/entity/q36823285
+137,rubus idaeus,raspberry,http://www.wikidata.org/entity/q12252383,raspberry,http://www.wikidata.org/entity/q13179
+138,rubus idaeus,raspberry,http://www.wikidata.org/entity/q12252383,raspberry seed oil,http://www.wikidata.org/entity/q55815098
+139,rubus idaeus,raspberry,http://www.wikidata.org/entity/q12252383,raspberry juice,http://www.wikidata.org/entity/q25220811
+140,rubus idaeus,raspberry,http://www.wikidata.org/entity/q12252383,red raspberry leaf,http://www.wikidata.org/entity/q7305370
+141,borago officinalis,borage,http://www.wikidata.org/entity/q147075,borage leaf,http://www.wikidata.org/entity/q103566559
+142,borago officinalis,borage,http://www.wikidata.org/entity/q147075,borage seed oil,http://www.wikidata.org/entity/q4944279
+143,borago officinalis,borage,http://www.wikidata.org/entity/q147075,borage water,http://www.wikidata.org/entity/q110611293
+144,borago officinalis,borage,http://www.wikidata.org/entity/q147075,borage seed fatty acid,http://www.wikidata.org/entity/q102822802
+145,borago officinalis,borage,http://www.wikidata.org/entity/q147075,borago officianalis seed,http://www.wikidata.org/entity/q102822690
+146,borago officinalis,borage,http://www.wikidata.org/entity/q147075,amabiline,http://www.wikidata.org/entity/q27105738
+147,borago officinalis,borage,http://www.wikidata.org/entity/q147075,borage oil,http://www.wikidata.org/entity/q72451039
+148,mentha,mints,http://www.wikidata.org/entity/q47859,mint leaf,http://www.wikidata.org/entity/q27640062
+149,mentha,mints,http://www.wikidata.org/entity/q47859,edible plant,http://www.wikidata.org/entity/q9323487
+150,thymus vulgaris,thyme,http://www.wikidata.org/entity/q148668,thyme,http://www.wikidata.org/entity/q3215980
+151,thymus vulgaris,thyme,http://www.wikidata.org/entity/q148668,thyme oil,http://www.wikidata.org/entity/q1103369
+152,urtica dioica,stinging nettle,http://www.wikidata.org/entity/q155909,nettle fiber,http://www.wikidata.org/entity/q48371359
+153,urtica dioica,stinging nettle,http://www.wikidata.org/entity/q155909,nettle herb,http://www.wikidata.org/entity/q96347656
+154,urtica dioica,stinging nettle,http://www.wikidata.org/entity/q155909,nettle root,http://www.wikidata.org/entity/q96347851
+155,urtica dioica,stinging nettle,http://www.wikidata.org/entity/q155909,nettle leaf,http://www.wikidata.org/entity/q96347634
+156,urtica dioica,stinging nettle,http://www.wikidata.org/entity/q155909,urtica dioica convar. fibra,http://www.wikidata.org/entity/q1397419
+157,cucurbita pepo,zucchini,http://www.wikidata.org/entity/q7229863,pumpkin,http://www.wikidata.org/entity/q165308
+158,cucurbita pepo,pumpkin,http://www.wikidata.org/entity/q7229863,pumpkin,http://www.wikidata.org/entity/q165308
+159,cucurbita pepo,zucchini,http://www.wikidata.org/entity/q7229863,marrow,http://www.wikidata.org/entity/q25172229
+160,cucurbita pepo,pumpkin,http://www.wikidata.org/entity/q7229863,marrow,http://www.wikidata.org/entity/q25172229
+161,cucurbita pepo,zucchini,http://www.wikidata.org/entity/q7229863,pumpkin seed,http://www.wikidata.org/entity/q3056521
+162,cucurbita pepo,pumpkin,http://www.wikidata.org/entity/q7229863,pumpkin seed,http://www.wikidata.org/entity/q3056521
+163,cucurbita pepo,zucchini,http://www.wikidata.org/entity/q7229863,zucchini,http://www.wikidata.org/entity/q7533
+164,cucurbita pepo,pumpkin,http://www.wikidata.org/entity/q7229863,zucchini,http://www.wikidata.org/entity/q7533
+165,cucurbita pepo,zucchini,http://www.wikidata.org/entity/q7229863,pumpkin seed oil,http://www.wikidata.org/entity/q770335
+166,cucurbita pepo,pumpkin,http://www.wikidata.org/entity/q7229863,pumpkin seed oil,http://www.wikidata.org/entity/q770335
+167,pastinaca sativa,parsnip,http://www.wikidata.org/entity/q188614,parsnip,http://www.wikidata.org/entity/q104413481
+168,mentha pulegium,pennyroyal,http://www.wikidata.org/entity/q161235,pennyroyal oil,http://www.wikidata.org/entity/q72499652
+169,spinacia oleracea,spinach,http://www.wikidata.org/entity/q81464,spinach,http://www.wikidata.org/entity/q36814998
+170,phaseolus,beans,http://www.wikidata.org/entity/q310438,dengkolan,http://www.wikidata.org/entity/q99658690
+171,beta vulgaris,beets,http://www.wikidata.org/entity/q165191,beet,http://www.wikidata.org/entity/q99548274
+172,beta vulgaris,beets,http://www.wikidata.org/entity/q165191,beet green,http://www.wikidata.org/entity/q36834781
+173,phaseolus vulgaris,climbing beans,http://www.wikidata.org/entity/q42339,green bean,http://www.wikidata.org/entity/q2987371
+174,phaseolus vulgaris,bush beans,http://www.wikidata.org/entity/q42339,green bean,http://www.wikidata.org/entity/q2987371
+175,phaseolus vulgaris,climbing beans,http://www.wikidata.org/entity/q42339,white bean,http://www.wikidata.org/entity/q65561345
+176,phaseolus vulgaris,bush beans,http://www.wikidata.org/entity/q42339,white bean,http://www.wikidata.org/entity/q65561345
+177,phaseolus vulgaris,climbing beans,http://www.wikidata.org/entity/q42339,phaseoli fructus (sine semine),http://www.wikidata.org/entity/q96068571
+178,phaseolus vulgaris,bush beans,http://www.wikidata.org/entity/q42339,phaseoli fructus (sine semine),http://www.wikidata.org/entity/q96068571
+179,phaseolus vulgaris,climbing beans,http://www.wikidata.org/entity/q42339,common bean,http://www.wikidata.org/entity/q74662248
+180,phaseolus vulgaris,bush beans,http://www.wikidata.org/entity/q42339,common bean,http://www.wikidata.org/entity/q74662248
+181,poaceae,grass,http://www.wikidata.org/entity/q43238,grass,http://www.wikidata.org/entity/q66429760
+182,poaceae,grass,http://www.wikidata.org/entity/q43238,cereal grain,http://www.wikidata.org/entity/q12117
+183,poaceae,grass,http://www.wikidata.org/entity/q43238,grain,http://www.wikidata.org/entity/q2995529
+184,poaceae,grass,http://www.wikidata.org/entity/q43238,hay,http://www.wikidata.org/entity/q336989
+185,brassica oleracea,cabbages,http://www.wikidata.org/entity/q146212,,
+186,brassica oleracea var. gemmifera,brussell sprouts,http://www.wikidata.org/entity/q146212,,
+187,ruta graveolens,rue,http://www.wikidata.org/entity/q25062,,
+188,satureja,savory,http://www.wikidata.org/entity/q22858,,
+189,tagetes,marigold,http://www.wikidata.org/entity/q147552,,
+190,cucurbita,squash,http://www.wikidata.org/entity/q5339301,,
+191,lavandula,lavender,http://www.wikidata.org/entity/q171892,,
+192,tanacetum vulgare,tansy,http://www.wikidata.org/entity/q27079,,
+193,brassica,mustard,http://www.wikidata.org/entity/q58677,,
+194,nasturtium,nasturtium,http://www.wikidata.org/entity/q161068,,
+195,nasturtium,nasturtiums,http://www.wikidata.org/entity/q161068,,

@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX copla: <http://www.semanticweb.org/kai/ontologies/2024/companion-planting#>
+PREFIX darwin: <http://rs.tdwg.org/dwc/terms/>
+
+SELECT ?s ?l ?x
+WHERE {
+?s rdf:type owl:Class .
+?s rdfs:subClassOf copla:Flora .
+?s darwin:scientificName ?x .
+?s rdfs:label ?l .
+}

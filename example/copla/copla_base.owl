@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="../owl/companion-planting-base0.2.rdf"
+         xmlns="../owl/companion-planting-base0.2.rdf#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#">
+  <owl:imports rdf:resource="http://rs.tdwg.org/dwc/terms"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#anticompanionWith"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionWith"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#positiveHostingFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#recruitsPollinatorsFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#positiveHostingFor"/>
+  <owl:propertyChainAxiom>
+    <rdf:Description>
+      <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#visitedBy"/>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_pollinatedBy"/>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </owl:propertyChainAxiom>
+  <owl:propertyChainAxiom>
+    <rdf:Description>
+      <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#flowersVisitedBy"/>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_pollinatedBy"/>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </owl:propertyChainAxiom>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#recruitsPredatorsFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#positiveHostingFor"/>
+  <owl:propertyChainAxiom>
+    <rdf:Description>
+      <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#visitedBy"/>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_eatenBy"/>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#parasiteOf"/>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </owl:propertyChainAxiom>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#trapCropFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNutrientsFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNitrogenFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNutrientsFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesCalcium">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNutrientsFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesPhosphorus">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNutrientsFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesPotassium">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNutrientsFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesWaterFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesNutrientsFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#physicalSupportFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesShadeFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#physicalSupportFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#providesWindProtectionFor">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#physicalSupportFor"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionNeighbour"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#neighbour">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#incompatibleNeighbour"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#containsFlora"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#visitedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_visitedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#hasParasite">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#parasiteOf">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#hostOf">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#hasHost">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#pollinatedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_pollinatedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#hasPathogen">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_hasPathogen">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#eatenBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_eatenBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#mutualistOf">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_mutualistOf">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#flowersVisitedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#_flowersVisitedBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#repellerOf">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+  <owl:propertyChainAxiom>
+    <rdf:Description>
+      <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#hasPart"/>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#repellerOf"/>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </owl:propertyChainAxiom>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#isRepelledBy">
+  <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#interactsWith"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#belongsToLayer"/>
+
+<owl:ObjectProperty rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#hasPart"/>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Species">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Species"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Fauna">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Species"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#BadGarden">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#containsFlora"/>
+          <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#BadlyPlacedFlora"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#CompanionGarden">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#containsFlora"/>
+          <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#PlantWithCompanion"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#3CompanionGarden">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#containsFlora"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#PlantWithCompanion"/>
+          <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#3TripleCompanionGarden">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Garden"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#containsFlora"/>
+          <owl:onClass rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#PlantWith3Companions"/>
+          <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#BadlyPlacedFlora">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#PlantWithCompanion">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionNeighbour"/>
+          <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#PlantWith2Companions">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionNeighbour"/>
+          <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#PlantWith3Companions">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#companionNeighbour"/>
+          <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minCardinality>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Fruit">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Flora"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Predator">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Fauna"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Pollinator">
+  <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kai/ontologies/2024/companion-planting#Fauna"/>
+</owl:Class>
+
+
+</rdf:RDF>
