@@ -1,5 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.0.21'
+    id 'application'
 }
 
 group = 'org.example'
@@ -22,6 +23,11 @@ dependencies {
     implementation("org.eclipse.rdf4j:rdf4j-sail-api:4.3.0")
     implementation("org.eclipse.rdf4j:rdf4j-queryparser-sparql:4.3.0")
     implementation 'org.antlr:antlr4:4.13.2'
+}
+
+
+application {
+    mainClass = 'org.smolang.depender.MainKt'
 }
 
 test {
