@@ -16,21 +16,23 @@ def make_systems(onto,df):
 
     return onto
 
-def make_role(onto,roles):
+def make_role(onto):
+    roles = set(df_names['role'])
+    roles.remove(np.nan)
     # add roles as individual
     with onto:
         for role in roles:
             new_role = onto.Role()
             new_role.roleName = role
-    
+
     return onto
 
 def make_users(onto,df):
     # add users as individuals
     with onto:
-        for row,user in df.iterrows():    
+        for row,user in df.iterrows():
             new_user = onto.User()
-            new_user.userId.append(user['id'])
+            new_user.userId.append(user['nid'])
             new_user.name = user['first']+" "+user['last']
             # connect user to the existing role
             for role in onto.Role.instances():
@@ -56,16 +58,14 @@ if __name__ == "__main__":
 
     path="file:///home/romi/Documents/Research/KGCDependencies/ConstructionDependencies/example/"
     onto = get_ontology(path+"ontology-rdf.owl").load()
-    
+
     df_sys = pd.read_csv(path+'0-systems.csv')
     df_names = pd.read_csv(path+'0-names.csv')
     df_acc = pd.read_csv(path+'0-accesses.csv')
 
-    roles = set(df_names['role'])
-    roles.remove(np.nan)
 
     onto = make_systems(onto,df_sys)
-    onto = make_role(onto,roles)
+    onto = make_role(onto)
     onto = make_users(onto,df_names)
     onto = make_accesses(onto,df_acc)
 

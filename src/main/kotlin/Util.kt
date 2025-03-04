@@ -9,6 +9,15 @@ import org.eclipse.rdf4j.query.algebra.Service
 import org.eclipse.rdf4j.query.algebra.StatementPattern
 import org.eclipse.rdf4j.query.algebra.ValueConstant
 import org.eclipse.rdf4j.query.algebra.helpers.AbstractQueryModelVisitor
+import java.io.BufferedReader
+import java.io.FileReader
+import java.io.IOException
+import org.eclipse.rdf4j.model.Resource
+import org.eclipse.rdf4j.repository.Repository
+import org.eclipse.rdf4j.repository.sail.SailRepository
+import org.eclipse.rdf4j.sail.memory.MemoryStore
+import org.eclipse.rdf4j.rio.RDFFormat
+import java.io.File
 
 /** Needed by Clikt for context propagation between subcommands s**/
 data class GlobalConfig(var verbose: Boolean = false)
@@ -100,4 +109,91 @@ fun filterOutStandardNamespaces(uris: Set<String>): Set<String> {
             uri.startsWith(prefix)
         }
     }.toSet()
+}
+
+fun extractCsvColumns(filePath: String): Set<String> {
+    try {
+        BufferedReader(FileReader(filePath)).use { reader ->
+            // Read the first line (header)
+            val headerLine = reader.readLine()
+                ?: throw IllegalArgumentException("CSV file is empty")
+
+            // Split the header line, handling potential variations in CSV formats
+            return headerLine
+                .split(',')  // Default CSV delimiter
+                .map { it.trim().replace("\"", "") }  // Remove quotes and whitespace
+                .toSet()
+        }
+    } catch (e: IOException) {
+        throw IllegalArgumentException("Error reading CSV file: ${e.message}")
+    }
+}
+
+
+
+
+
+
+
+fun findUrisWithSuffixes(
+    ontologyFilePath: String,
+    suffixes: List<String>
+): Set<String> {
+    // Create a new in-memory RDF repository
+    val repository: Repository = SailRepository(MemoryStore())
+
+    try {
+        // Open a connection to the repository
+        repository.connection.use { conn ->
+            // Load the ontology file
+            conn.add(File(ontologyFilePath), "", RDFFormat.TRIG)
+
+            // Prepare the result set
+            val matchingUris = mutableSetOf<String>()
+
+            // Execute a SPARQL-like query to find all subjects and objects
+            val statements = conn.getStatements(null, null, null)
+
+            // Iterate through all statements
+            statements.use {
+                while (it.hasNext()) {
+                    val statement = it.next()
+
+                    // Check subject
+                    statement.subject?.let { subject ->
+                        checkAndAddUri(subject, suffixes, matchingUris)
+                    }
+
+                    // Check object if it's a resource
+                    statement.`object`?.let { obj ->
+                        checkAndAddUri(obj, suffixes, matchingUris)
+                    }
+                }
+            }
+
+            return matchingUris
+        }
+    } finally {
+        // Ensure repository is shut down
+        repository.shutDown()
+    }
+}
+
+// Helper function to check and add URIs with matching suffixes
+private fun checkAndAddUri(
+    value: Value,
+    suffixes: List<String>,
+    matchingUris: MutableSet<String>
+) {
+    // Check if the value is a resource (has a string representation)
+    if (value is Resource) {
+        val uriString = value.stringValue()
+
+        // Check if any suffix matches the end of the URI
+        if (suffixes.any { suffix ->
+                uriString.endsWith(suffix)
+            }) {
+            matchingUris.add(uriString)
+        }
+    }
 }
