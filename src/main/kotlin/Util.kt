@@ -86,22 +86,25 @@ class UriExtractorVisitor(
     }
 }
 
+var standardNamespacePrefixes = mutableSetOf(
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#",      // RDF
+    "http://www.w3.org/2000/01/rdf-schema#",            // RDFS
+    "http://www.w3.org/2002/07/owl#",                   // OWL
+    "http://www.w3.org/2001/XMLSchema#",                // XSD
+    "http://www.w3.org/ns/shacl#",                      // SHACL
+    "http://www.w3.org/XML/1998/namespace",             // XML Namespace
+    "http://purl.org/dc/elements/1.1/",                 // Dublin Core
+    "http://purl.org/dc/terms/",                        // Dublin Core Terms
+    "http://semweb.mmlab.be/ns/rml#",                   // RML,
+    "http://www.w3.org/ns/r2rml#",                      // also RML
+    "http://mapping.example.com/",                      // hack
+    "https://astrea.linkeddata.es/shapes#",             // also a hack
+    "http://www.w3.org/2004/02/skos/core#",             // SKOS
+)
 
 fun filterOutStandardNamespaces(uris: Set<String>): Set<String> {
     // Define standard namespace prefixes to filter out
-    val standardNamespacePrefixes = setOf(
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#",      // RDF
-        "http://www.w3.org/2000/01/rdf-schema#",            // RDFS
-        "http://www.w3.org/2002/07/owl#",                   // OWL
-        "http://www.w3.org/2001/XMLSchema#",                // XSD
-        "http://www.w3.org/ns/shacl#",                      // SHACL
-        "http://www.w3.org/XML/1998/namespace",             // XML Namespace
-        "http://purl.org/dc/elements/1.1/",                 // Dublin Core
-        "http://purl.org/dc/terms/",                        // Dublin Core Terms
-        "http://semweb.mmlab.be/ns/rml#",                   // RML,
-        "http://www.w3.org/ns/r2rml#",                      // also RML
-        "http://mapping.example.com/",                      // hack
-    )
+
 
     // Filter out URIs that start with any of the standard namespace prefixes
     return uris.filterNot { uri ->

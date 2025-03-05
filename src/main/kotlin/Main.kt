@@ -6,6 +6,7 @@ import com.github.ajalt.clikt.core.*
 import com.github.ajalt.clikt.parameters.arguments.argument
 import com.github.ajalt.clikt.parameters.arguments.multiple
 import com.github.ajalt.clikt.parameters.options.flag
+import com.github.ajalt.clikt.parameters.options.multiple
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.types.file
 import org.antlr.v4.runtime.CharStreams
@@ -53,6 +54,7 @@ class Sources: CliktCommand() {
             if (assets.containsKey(it.name)) throw Exception("Asset with name ${it.name} already exists!")
             assets[it.name] = (Asset(it.name, it.path, Kind.SOURCE))
             cols[it.name] = extractCsvColumns(it.path)
+            if(config.verbose) echo("Source ${it.name} has columns ${cols[it.name]}")
         }
     }
 }
@@ -65,6 +67,7 @@ class Mappings: CliktCommand() {
         val extra = mutableSetOf<Map<String,String>>()
         files.forEach{ file ->
             val res = getAllURIMap(file.path)
+            if(config.verbose) echo("Mapping $file has mappings $res")
             res.total.values.forEach{
                 dep ->
                 if(assets.containsKey(dep.name)) throw Exception("Asset with name ${dep.name} already exists!")
@@ -100,6 +103,8 @@ class Shapes: CliktCommand() {
         files.forEach{ file ->
             if(assets.containsKey(file.name)) throw Exception("Asset with name ${file.name} already exists!")
             val res = filterOutStandardNamespaces(getAllURIShape(file.path))
+
+            if(config.verbose) echo("Filter $file has $res")
             assets[file.name] = (Asset(file.name, file.path, Kind.SHAPE, findDependencies(res, setOf(Kind.MAPPING, Kind.PMAPPING)), res))
         }
     }
@@ -145,9 +150,14 @@ class Runners: CliktCommand() {
 class Main : CliktCommand() {
     private val verbose by option().flag()
     private val config by findOrSetObject { GlobalConfig() }
+    private val exclude by option().multiple()
     override val allowMultipleSubcommands = true
     override fun run() {
         config.verbose = verbose
+        for( exc in exclude ){
+            echo("Excluding prefix $exc")
+            standardNamespacePrefixes += exc
+        }
         echo("Verbose mode is ${if (verbose) "on" else "off"}")
     }
 }
