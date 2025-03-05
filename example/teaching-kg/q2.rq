@@ -1,9 +1,6 @@
-PREFIX base: <https://w3id.org/coursesonto#>
 PREFIX schema: <http://schema.org/>
-SELECT DISTINCT ?material
-WHERE {
-?course base:teaches ?topic .
-?course schema:hasCourseInstance ?courseSession .
-?coursesSession base:containsResource ?material .
-FILTER(?topic = <X>) # replace X with URI of the given Knowledge Topic
+
+SELECT DISTINCT ?topic ?level WHERE {
+	?course schema:teaches ?topic .
+	?course schema:educationalLevel ?level .
 }

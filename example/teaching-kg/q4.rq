@@ -1,13 +1,9 @@
-PREFIX base: <https://w3id.org/coursesonto#>
+PREFIX courses: <https://w3id.org/coursesonto#>
 PREFIX schema: <http://schema.org/>
-PREFIX edutype: <https://w3id.org/coursesonto/kos/educational-type/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT DISTINCT ?practice
-WHERE {
-?course base:teaches ?topic .
-?course schema:hasCourseInstance ?courseSession .
-?coursesSession base:containsResource ?material .
-?material base:hasType ?practice .
-?practice skos:hasTopConcept edutype:practice .
-FILTER(?topic = <X>) # replace X with URI of the given Knowledge Topic
+
+SELECT DISTINCT ?course ?requiresKnowledge ?mainSkill WHERE {
+	?course schema:teaches ?topic .
+	?topic schema:name ?requiresKnowledge .
+    ?topic courses:mainTopic ?mainSkill .
+
 }
