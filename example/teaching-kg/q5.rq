@@ -1,0 +1,6 @@
+PREFIX schema: <http://schema.org/>
+SELECT ?educationalLevel
+WHERE {
+?course schema:educationalLevel ?educationalLevel .
+FILTER(?course = <Y>) # replace Y with URI of the given Course
+}

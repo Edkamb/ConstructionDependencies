@@ -1,0 +1,128 @@
+knowledge_topics
+"Introduction to Semantic web, knowledge graphs and RDF"
+Introduction
+Motivation and High-Level Introduction
+Metadata
+"RDF, Turtle"
+History of KGs
+RDF
+Intro to KG
+Hypertext and the Web
+RDF/RDF-S/OWL
+Ontologies
+Basic database concepts
+RDF
+"Hypertext, the Internet and the Web"
+Introduction to semantic web
+RDF
+triplestores and graph databases
+refresher about FOLKG Creation
+"ontologies for information retrieval (mainly for medical domain - UMLS, etc.)"
+SPARQL
+Models
+RDF and SPARQL
+Data Privacy Vocabulary
+"RDFS, SPARQL"
+RDF graphs
+SPARQL
+RDF Reification
+Linked Data Principles
+logical inference
+"RDF, representation"
+Functional Dependencies and Keys
+Authoring RDF (~ KG modelling)
+The Linked Data Principles
+Introduction to RDF
+SPARQL
+query languages (SPARQL/Cypher)
+intro to Knowledge Graphs
+graph embeddings
+Validating RDF
+Querying and Serialization
+Description Logics
+FAIR data/data quality
+OWL
+RDF graph modeling
+RDFS
+RDF Schema and Inferencing 
+RDF
+"domain ontologies (medical domain, business domain)"
+"SPARQL, querying"
+"SQL by examples: products, customers and orders"
+Linked Data Platforms
+The Resource Description Framework
+Knowledge graphs and Wikidata
+RDFS
+distributed graph databases
+Ontologies & DL
+recommender systems based on graph data
+Advanced topics
+Schemas
+Ontology Engineering
+Data Catalogues/DCAT
+SHACL
+RDF construction
+OWL
+RDF Transformation and linking 
+"REST, LDP, Solid"
+Tools and engines 
+Good table design: Normal Forms
+JSON-LD & schema.org
+Querying RDF Datasets with SPARQL
+RDF applications
+OBDA
+Deduction
+Other Ontology-related Topics
+RDF/Turtle
+Application areas 1
+RDF publishing & querying
+SWRL
+SPARQL
+Case Studies
+Linked Data
+DB Applications
+SPARQL
+Processing SPARQL Queries
+SPARQL
+Induction
+Other RDF and SPARQL related Topics
+Provenance/Data Lineage/PROV-O
+Application areas 2
+RDF validation
+KG metadata and quality 
+SPARQL
+Knowledge extraction 
+RDF and N3
+SHACL
+Publishing and Consuming Linked Data
+Validating RDF data
+KG Creation
+Automating data protection and compliance/DPCat
+Knowledge Graph Embeddings 
+KG completion and embeddings 
+SPARQL processing
+Sparql22.11
+OWL
+Applications of Linked Data
+SEO
+KG Alignment
+Property Graphs
+KG in ASE or network analytics (guest lecture)
+RDFS and OWL
+Reasoning
+Programming the Semantic Web
+Data Modelling and Vocabulary Descriptions
+Ontologies
+KG Publishing
+RDF(S) Model-theoretic Semantics
+Sparql Endpoints
+Mini project combining many technologies
+Semantics of RDF and RDF Schema Vocabularies
+RDF data modeling
+Linguistic LOD
+"Rules, Entailment + Querying"
+Data Modelling with OWL LD
+Enterprise KGs
+Building Semantic Web Systems
+Combining relational DB and RDF sources
+Combining Query Processing with Entailment

@@ -1,0 +1,214 @@
+prefixes: 
+  xsd: http://www.w3.org/2001/XMLSchema#
+  rr: http://www.w3.org/ns/r2rml#,
+  rml: http://semweb.mmlab.be/ns/rml#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  ql: http://semweb.mmlab.be/ns/ql#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  foaf: http://xmlns.com/foaf/0.1/
+  schema: http://schema.org/
+  dc: http://purl.org/dc/elements/1.1/
+  skos: http://www.w3.org/2004/02/skos/core#
+  courses: https://w3id.org/coursesonto#,
+  educor: https://github.com/tibonto/educor#
+  
+mappings:
+  educational_organization:
+    sources:
+    - ["kg_resources.csv~csv"]
+    s: http://example.org/resource/educational_organization/$(Affiliation)
+    po:
+    - [a,[schema:EducationalOrganization, schema:CollegeOrUniversity]]
+    - [schema:location, $(Country)]
+    - [schema:name, $(Affiliation)]
+    #- [schema:url, $()]
+
+  person:
+    sources:
+    - ["kg_resources.csv~csv"]
+    s: http://example.org/resource/person/$(name)
+    po:
+    - [a,[schema:Person, courses:Lecturer]]
+    - [schema:email, $(email)]
+    - [schema:gender, $(gender)]
+    - [schema:name, $(name)]
+    #- [schema:url, $()]
+    - p: schema:memberOf
+      o:
+      - mapping: educational_organization
+        condition:
+          function: equal
+          parameters:
+            - [str1, $(Affiliation)]
+            - [str2, $(Affiliation)]
+  
+  skill:
+    sources:
+    - ["kg_topics.csv~csv"]
+    s: http://example.org/resource/skill/$(skill)
+    po:
+    - [a, educor:Skill]
+    - [schema:educationalLevel, $(educationalLevel)]
+    #- [schema:timeRequired, $()]
+    - p: schema:assesses
+      o:
+      - mapping: learning_outcome
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(assesses)]
+          - [str2, $(assesses)]
+    - p: schema:teaches
+      o:
+      - mapping: knowledge_topic_2
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(teaches_true)]
+          - [str2, $(teaches_true)]
+    - p: schema:teaches
+      o:
+      - mapping: knowledge_topic_3
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(teaches_false)]
+          - [str2, $(teaches_false)]
+    - p: educor:requiresKnowledge
+      o:
+      - mapping: knowledge_topic
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(requiresKnowledge)]
+          - [str2, $(requiresKnowledge)]
+    - p: courses:competencyRequired
+      o:
+      - mapping: competency_required
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(competencyRequired)]
+          - [str2, $(competencyRequired)]
+  
+  learning_outcome:
+    sources:
+    - ["kg_topics.csv~csv"]
+    s: http://example.org/resource/learning_outcome/$(assesses)
+    po:
+    - [a, educor:LearningOutcome]
+    - [schema:description, $(assesses)]
+    - [schema:name, $(assesses)]
+  
+  course:
+    sources:
+    - ["kg_resources.csv~csv"]
+    s: http://example.org/resource/course/$(title)
+    po:
+    - [a, schema:Course]
+    #- [schema:audience, $()]
+    #- [schema:description, $()]
+    #- [schema:educationalLevel, $()]
+    #- [schema:license, $()]
+    - [schema:name, $(title)]
+    #- [schema:requirements, $()]
+    #- [schema:seeAlso, $()]
+    #- [schema:timeRequired, $()]
+    - [schema:url, $(url)]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week1)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week2)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week3)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week4)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week5)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week6)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week7)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week8)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week9)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week10)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week11)~iri]
+    - [schema:teaches, http://example.org/resource/knowledge_topic/$(week12)~iri]
+    - p: schema:provider
+      o:
+      - mapping: educational_organization
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(Affiliation)]
+          - [str2, $(Affiliation)]
+    - p: schema:provider
+      o:
+      - mapping: person
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(email)]
+          - [str2, $(email)]            
+    - p: courses:responsibleEntity
+      o:
+      - mapping: educational_organization
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(Affiliation)]
+          - [str2, $(Affiliation)]
+    - p: courses:responsibleEntity
+      o:
+      - mapping: person
+        condition:
+          function: equal
+          parameters:
+          - [str1, $(email)]
+          - [str2, $(email)]
+  
+
+  knowledge_topic:
+    sources:
+    - ["kg_topics.csv~csv"]
+    s: http://example.org/resource/knowledge_topic/$(requiresKnowledge)
+    po:
+    - [a, educor:KnowledgeTopic]
+    - [schema:educationalLevel, $(educationalLevel)]
+    - [schema:name, $(requiresKnowledge)]
+    - [courses:mainTopic, $(mainSkill), xsd:boolean]
+    #- [courses:theoreticalTopic, $(), xsd:boolean]
+
+  competency_required:
+    sources:
+    - ["kg_topics.csv~csv"]
+    s: http://example.org/resource/competency_required/$(competencyRequired)
+    po:
+    - [a, educor:KnowledgeTopic]
+    - [schema:educationalLevel, $(educationalLevel)]
+    - [schema:name, $(competencyRequired)]
+
+  knowledge_topic_2:
+    sources:
+    - ["kg_topics.csv~csv"]
+    s: http://example.org/resource/knowledge_topic/$(teaches_true)
+    po:
+    - [a, educor:KnowledgeTopic]
+    - [schema:educationalLevel, $(educationalLevel)]
+    - [schema:name, $(teaches_true)]
+    - [courses:theoreticalTopic, "true", xsd:boolean]
+
+  knowledge_topic_3:
+    sources:
+    - ["kg_topics.csv~csv"]
+    s: http://example.org/resource/knowledge_topic/$(teaches_false)
+    po:
+    - [a, educor:KnowledgeTopic]
+    - [schema:educationalLevel, $(educationalLevel)]
+    - [schema:name, $(teaches_false)]
+    - [courses:theoreticalTopic, "false", xsd:boolean]
+
+  knowledge_topic_resources:
+    sources:
+    - ["kg_resources2.csv~csv"]
+    s: http://example.org/resource/knowledge_topic/$(knowledge_topics)
+    po:
+    - [a, educor:KnowledgeTopic]
+    #- [schema:educationalLevel, $(educationalLevel)]
+    - [schema:name, $(knowledge_topics)]
+    #- [courses:mainTopic, $(mainSkill), xsd:boolean]
+    #- [courses:theoreticalTopic, $(), xsd:boolean]
+  

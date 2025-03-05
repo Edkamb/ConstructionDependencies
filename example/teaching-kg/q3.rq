@@ -1,0 +1,7 @@
+PREFIX base: <https://w3id.org/coursesonto#>
+PREFIX educor: <https://github.com/tibonto/educor#>
+SELECT DISTINCT ?prerequisite
+WHERE {
+?prerequisite educor:requiresKnowledge ?topic .
+FILTER(?topic = <X>) # replace X with URI of the given Skill
+}

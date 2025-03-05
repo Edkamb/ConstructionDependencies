@@ -1,0 +1,7 @@
+PREFIX base: <https://w3id.org/coursesonto#>
+SELECT ?person
+WHERE {
+?course base:teaches ?topic .
+?course base:responsibleEntity ?person .
+FILTER(?topic = <X>) # replace X with URI of the given Knowledge Topic
+}

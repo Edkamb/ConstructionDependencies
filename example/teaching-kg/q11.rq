@@ -1,0 +1,8 @@
+PREFIX base: <https://w3id.org/coursesonto#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?material
+WHERE {
+?course schema:hasCourseInstance ?courseSession .
+?coursesSession base:containsResource ?material .
+FILTER(?course = <Y>) # replace Y with URI of the given Course
+}

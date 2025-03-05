@@ -1,0 +1,9 @@
+
+
+PREFIX schema: <http://schema.org/>
+PREFIX educor: <https://github.com/tibonto/educor#>
+SELECT ?material
+WHERE {
+?material a educor:EducationalResource ;
+schema:isAccessibleForFree true .
+}
