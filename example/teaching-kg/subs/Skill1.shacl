@@ -1,8 +1,8 @@
-@prefix courses: <https://w3id.org/coursesonto#,> .
+@prefix courses: <https://w3id.org/coursesonto#> .
 @prefix educor: <https://github.com/tibonto/educor#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -18,14 +18,14 @@
             sh:node <http://mapping.example.com/map_learning_outcome_000/shape>,
                 <http://mapping.example.com/map_learning_outcome_000/shape9247> ;
             sh:nodeKind sh:IRI ;
-            sh:path schema1:assesses ],
+            sh:path schema:assesses ],
         [ sh:nodeKind sh:Literal ;
-            sh:path schema1:educationalLevel ],
+            sh:path schema:educationalLevel ],
         [ sh:node <http://mapping.example.com/map_knowledge_topic_2_000/shape>,
                 <http://mapping.example.com/map_knowledge_topic_2_000/shape9198>,
                 <http://mapping.example.com/map_knowledge_topic_3_000/shape1915> ;
             sh:nodeKind sh:IRI ;
-            sh:path schema1:teaches ],
+            sh:path schema:teaches ],
         [ rdfs:label "requiresKnowledge"@en ;
             sh:class educor:KnowledgeTopic ;
             sh:name "requiresKnowledge"@en ;
@@ -41,7 +41,7 @@
                 <http://mapping.example.com/map_knowledge_topic_3_000/shape>,
                 <http://mapping.example.com/map_knowledge_topic_3_000/shape1915> ;
             sh:nodeKind sh:IRI ;
-            sh:path schema1:teaches ],
+            sh:path schema:teaches ],
         <https://astrea.linkeddata.es/shapes#20e67bd97d521389ade2150385bee82d>,
         <https://astrea.linkeddata.es/shapes#3492f861b17a48948340c5af92147384>,
         <https://astrea.linkeddata.es/shapes#3f837e10fd7f523919e339f32f187902>,
@@ -52,24 +52,24 @@
 
 <https://astrea.linkeddata.es/shapes#20e67bd97d521389ade2150385bee82d> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:competencyRequired .
+    sh:path schema:competencyRequired .
 
 <https://astrea.linkeddata.es/shapes#3492f861b17a48948340c5af92147384> a sh:PropertyShape ;
     rdfs:label "mainSkill"@en ;
     sh:datatype xsd:boolean ;
     sh:name "mainSkill"@en ;
     sh:nodeKind sh:Literal ;
-    sh:path <http://github.com/naiayti/teachingKGonto/mainSkill> ;
+    sh:path <https://w3id.org/coursesonto#mainSkill> ;
     sh:pattern "true|false|0|1" .
 
 <https://astrea.linkeddata.es/shapes#3f837e10fd7f523919e339f32f187902> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:url .
+    sh:path schema:url .
 
 <https://astrea.linkeddata.es/shapes#cb60703d7be0e5bd878489ca47bf6407> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:timeRequired .
+    sh:path schema:timeRequired .
 
 <https://astrea.linkeddata.es/shapes#e11b34ff17fae5703d9efb54f94084b0> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:name .
+    sh:path schema:name .

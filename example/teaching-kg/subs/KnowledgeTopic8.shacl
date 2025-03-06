@@ -1,8 +1,8 @@
-@prefix courses: <https://w3id.org/coursesonto#,> .
+@prefix courses: <https://w3id.org/coursesonto#> .
 @prefix educor: <https://github.com/tibonto/educor#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -12,7 +12,7 @@
     sh:nodeKind sh:IRI ;
     sh:pattern "http://example.org/resource/knowledge_topic/.*" ;
     sh:property [ sh:nodeKind sh:Literal ;
-            sh:path schema1:name ],
+            sh:path schema:name ],
         _:nd9392899b9e2463b8261be26b4850466b20,
         _:nd9392899b9e2463b8261be26b4850466b21,
         _:nd9392899b9e2463b8261be26b4850466b22,
@@ -24,16 +24,16 @@
     sh:targetClass educor:KnowledgeTopic .
 
 _:nd9392899b9e2463b8261be26b4850466b20 sh:nodeKind sh:Literal ;
-    sh:path schema1:educationalLevel .
+    sh:path schema:educationalLevel .
 
 _:nd9392899b9e2463b8261be26b4850466b21 sh:nodeKind sh:Literal ;
-    sh:path schema1:educationalLevel .
+    sh:path schema:educationalLevel .
 
 _:nd9392899b9e2463b8261be26b4850466b24 sh:nodeKind sh:Literal ;
-    sh:path schema1:educationalLevel .
+    sh:path schema:educationalLevel .
 
 _:nd9392899b9e2463b8261be26b4850466b25 sh:nodeKind sh:Literal ;
-    sh:path schema1:educationalLevel .
+    sh:path schema:educationalLevel .
 
 _:nd9392899b9e2463b8261be26b4850466b23 sh:datatype xsd:boolean ;
     sh:nodeKind sh:Literal ;
@@ -53,5 +53,5 @@ _:nd9392899b9e2463b8261be26b4850466b22 sh:datatype xsd:boolean ;
     sh:datatype xsd:boolean ;
     sh:name "theoreticalTopic"@en ;
     sh:nodeKind sh:Literal ;
-    sh:path <http://github.com/naiayti/teachingKGonto/stheroreticalTopic> ;
+    sh:path <https://w3id.org/coursesonto#stheroreticalTopic> ;
     sh:pattern "true|false|0|1" .

@@ -1,7 +1,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix tkg: <http://github.com/naiayti/teachingKGonto/> .
+@prefix courses: <http://w3id.org/coursesonto#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl2: <http://www.w3.org/2006/12/owl2#> .
@@ -41,7 +41,7 @@ skos:definition rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://github.com/naiayti/teachingKGonto/TopicType
-tkg:TopicType rdf:type rdfs:Datatype ;
+courses:TopicType rdf:type rdfs:Datatype ;
               rdfs:label "TopicType"@en .
 
 
@@ -54,15 +54,15 @@ xsd:duration rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://github.com/naiayti/teachingKGonto/containsResource
-tkg:containsResource rdf:type owl:ObjectProperty ;
+courses:containsResource rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
-                     rdfs:domain tkg:CourseSession ;
+                     rdfs:domain courses:CourseSession ;
                      rdfs:range educor:EducationalResource ;
                      rdfs:label "containsResource"@en .
 
 
 ###  http://github.com/naiayti/teachingKGonto/responsibleEntity
-tkg:responsibleEntity rdf:type owl:ObjectProperty ;
+courses:responsibleEntity rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain schema:Course ;
                       rdfs:range schema:EducationalOrganization ,
@@ -118,7 +118,7 @@ schema:hasCourseInstance rdf:type owl:ObjectProperty ;
 ###  http://schema.org/instructor
 schema:instructor rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:domain tkg:CourseSession ;
+                  rdfs:domain courses:CourseSession ;
                   rdfs:range schema:Person ;
                   rdfs:label "instructor"@en .
 
@@ -174,7 +174,7 @@ educor:requiresKnowledge rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  http://github.com/naiayti/teachingKGonto/coreResource
-tkg:coreResource rdf:type owl:DatatypeProperty ;
+courses:coreResource rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain educor:EducationalResource ;
                  rdfs:range xsd:boolean ;
@@ -183,7 +183,7 @@ tkg:coreResource rdf:type owl:DatatypeProperty ;
 
 
 ###  http://github.com/naiayti/teachingKGonto/educationalResourceType
-tkg:educationalResourceType rdf:type owl:DatatypeProperty ;
+courses:educationalResourceType rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf owl:topDataProperty ;
                             rdfs:domain educor:EducationalResource ;
                             rdfs:range rdf:langString ;
@@ -192,7 +192,7 @@ tkg:educationalResourceType rdf:type owl:DatatypeProperty ;
 
 
 ###  http://github.com/naiayti/teachingKGonto/mainSkill
-tkg:mainSkill rdf:type owl:DatatypeProperty ;
+courses:mainSkill rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain educor:Skill ;
               rdfs:range xsd:boolean ;
@@ -201,7 +201,7 @@ tkg:mainSkill rdf:type owl:DatatypeProperty ;
 
 
 ###  http://github.com/naiayti/teachingKGonto/stheroreticalTopic
-tkg:stheroreticalTopic rdf:type owl:DatatypeProperty ;
+courses:stheroreticalTopic rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain educor:KnowledgeTopic ;
                        rdfs:range xsd:boolean ;
@@ -212,7 +212,7 @@ tkg:stheroreticalTopic rdf:type owl:DatatypeProperty ;
 ###  http://schema.org/about
 schema:about rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain tkg:CourseSession ;
+             rdfs:domain courses:CourseSession ;
              rdfs:range rdf:langString ;
              rdfs:label "about"@en .
 
@@ -322,7 +322,7 @@ schema:url rdf:type owl:DatatypeProperty ;
 #################################################################
 
 ###  http://github.com/naiayti/teachingKGonto/CourseSession
-tkg:CourseSession rdf:type owl:Class ;
+courses:CourseSession rdf:type owl:Class ;
                   owl:equivalentClass schema:CourseInstance ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty schema:name ;
@@ -332,7 +332,7 @@ tkg:CourseSession rdf:type owl:Class ;
 
 
 ###  http://github.com/naiayti/teachingKGonto/Lecturer
-tkg:Lecturer rdf:type owl:Class ;
+courses:Lecturer rdf:type owl:Class ;
              rdfs:subClassOf schema:Person ;
              rdfs:label "Lecturer"@en .
 

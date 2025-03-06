@@ -1,8 +1,8 @@
-@prefix courses: <https://w3id.org/coursesonto#,> .
+@prefix courses: <https://w3id.org/coursesonto#> .
 @prefix educor: <https://github.com/tibonto/educor#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -12,15 +12,15 @@
     sh:nodeKind sh:IRI ;
     sh:pattern "http://example.org/resource/educational_organization/.*" ;
     sh:property [ sh:nodeKind sh:Literal ;
-            sh:path schema1:name ],
+            sh:path schema:name ],
         [ rdfs:label "location"@en ;
             sh:datatype rdf:langString ;
             sh:name "location"@en ;
             sh:nodeKind sh:Literal ;
-            sh:path schema1:location ],
+            sh:path schema:location ],
         <https://astrea.linkeddata.es/shapes#8630f0ce32117771309ef7826468e6ae> ;
-    sh:targetClass schema1:EducationalOrganization .
+    sh:targetClass schema:EducationalOrganization .
 
 <https://astrea.linkeddata.es/shapes#8630f0ce32117771309ef7826468e6ae> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:url .
+    sh:path schema:url .

@@ -1,8 +1,8 @@
-@prefix courses: <https://w3id.org/coursesonto#,> .
+@prefix courses: <https://w3id.org/coursesonto#> .
 @prefix educor: <https://github.com/tibonto/educor#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -18,27 +18,27 @@
             sh:minInclusive -32768 ;
             sh:name "gender"@en ;
             sh:nodeKind sh:Literal ;
-            sh:path schema1:gender ;
+            sh:path schema:gender ;
             sh:pattern "[\\-+]?[0-9]+" ],
         [ rdfs:label "email"@en ;
             sh:datatype xsd:string ;
             sh:name "email"@en ;
             sh:nodeKind sh:Literal ;
-            sh:path schema1:email ;
+            sh:path schema:email ;
             sh:pattern ".*" ],
         [ sh:nodeKind sh:Literal ;
-            sh:path schema1:name ],
+            sh:path schema:name ],
         [ rdfs:label "memberOf" ;
-            sh:class schema1:EducationalOrganization ;
+            sh:class schema:EducationalOrganization ;
             sh:name "memberOf" ;
             sh:node <http://mapping.example.com/map_educational_organization_000/shape6901> ;
             sh:nodeKind sh:IRI ;
-            sh:path schema1:memberOf ],
+            sh:path schema:memberOf ],
         <https://astrea.linkeddata.es/shapes#7dbe3413b601b53d7126fc77259caec1> ;
-    sh:targetClass schema1:Person .
+    sh:targetClass schema:Person .
 
 
 
 <https://astrea.linkeddata.es/shapes#7dbe3413b601b53d7126fc77259caec1> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:url .
+    sh:path schema:url .

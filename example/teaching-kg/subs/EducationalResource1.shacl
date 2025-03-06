@@ -1,8 +1,8 @@
-@prefix courses: <https://w3id.org/coursesonto#,> .
+@prefix courses: <https://w3id.org/coursesonto#> .
 @prefix educor: <https://github.com/tibonto/educor#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -28,7 +28,7 @@
     sh:datatype xsd:boolean ;
     sh:name "isAccessibleForFree"@en ;
     sh:nodeKind sh:Literal ;
-    sh:path schema1:isAccessibleForFree ;
+    sh:path schema:isAccessibleForFree ;
     sh:pattern "true|false|0|1" .
 
 <https://astrea.linkeddata.es/shapes#3164758b8018085421d0120b98e890d9> a sh:PropertyShape ;
@@ -36,42 +36,42 @@
     sh:class educor:EducationalResource ;
     sh:name "isSimilarTo"@en ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path schema1:isSimilarTo .
+    sh:path schema:isSimilarTo .
 
 <https://astrea.linkeddata.es/shapes#39acd5722b557b71ab307b76bee14727> a sh:PropertyShape ;
     rdfs:label "coreResource"@en ;
     sh:datatype xsd:boolean ;
     sh:name "coreResource"@en ;
     sh:nodeKind sh:Literal ;
-    sh:path <http://github.com/naiayti/teachingKGonto/coreResource> ;
+    sh:path <https://w3id.org/coursesonto#coreResource> ;
     sh:pattern "true|false|0|1" .
 
 <https://astrea.linkeddata.es/shapes#40532687b7db6e809045278295f2e666> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:description .
+    sh:path schema:description .
 
 <https://astrea.linkeddata.es/shapes#41a87d27961455547444da04ec0cff54> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:url .
+    sh:path schema:url .
 
 <https://astrea.linkeddata.es/shapes#594d484ef73e3c6ddc1bca32b3c8dd33> a sh:PropertyShape ;
     rdfs:label "author"@en ;
-    sh:class schema1:Person ;
+    sh:class schema:Person ;
     sh:name "author"@en ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path schema1:author .
+    sh:path schema:author .
 
 <https://astrea.linkeddata.es/shapes#bd239efba87e7ed6c15f0fb6c670d688> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:copyrightHolder .
+    sh:path schema:copyrightHolder .
 
 <https://astrea.linkeddata.es/shapes#d2d490848cf9e9236d0a09b4d3166ed9> a sh:PropertyShape ;
     rdfs:label "educationalResourceType"@en ;
     sh:datatype rdf:langString ;
     sh:name "educationalResourceType"@en ;
     sh:nodeKind sh:Literal ;
-    sh:path <http://github.com/naiayti/teachingKGonto/educationalResourceType> .
+    sh:path <https://w3id.org/coursesonto#educationalResourceType> .
 
 <https://astrea.linkeddata.es/shapes#ee5bf618b4b5520ec62c3e083840ac6b> a sh:PropertyShape ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:path schema1:name .
+    sh:path schema:name .
