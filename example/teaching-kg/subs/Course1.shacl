@@ -1,0 +1,133 @@
+@prefix courses: <https://w3id.org/coursesonto#> .
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://mapping.example.com/map_course_000/shape> a sh:NodeShape ;
+    rdfs:label "Course"@en ;
+    sh:name "Course"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/course/.*" ;
+    sh:property [ sh:node <http://mapping.example.com/map_educational_organization_000/shape>,
+                <http://mapping.example.com/map_educational_organization_000/shape6901>,
+                <http://mapping.example.com/map_person_000/shape3627> ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:provider ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:node <http://mapping.example.com/map_educational_organization_000/shape6901>,
+                <http://mapping.example.com/map_person_000/shape>,
+                <http://mapping.example.com/map_person_000/shape3627> ;
+            sh:nodeKind sh:IRI ;
+            sh:path schema:provider ],
+        [ sh:nodeKind sh:Literal ;
+            sh:path schema:url ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:node <http://mapping.example.com/map_educational_organization_000/shape>,
+                <http://mapping.example.com/map_educational_organization_000/shape6901>,
+                <http://mapping.example.com/map_person_000/shape3627> ;
+            sh:nodeKind sh:IRI ;
+            sh:path courses:responsibleEntity ],
+        [ sh:nodeKind sh:Literal ;
+            sh:path schema:name ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:node <http://mapping.example.com/map_educational_organization_000/shape6901>,
+                <http://mapping.example.com/map_person_000/shape>,
+                <http://mapping.example.com/map_person_000/shape3627> ;
+            sh:nodeKind sh:IRI ;
+            sh:path courses:responsibleEntity ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        [ sh:nodeKind sh:IRI ;
+            sh:path schema:teaches ],
+        <https://astrea.linkeddata.es/shapes#12740fc6ab3960ccb1bd60b148b76981>,
+        <https://astrea.linkeddata.es/shapes#1caade321ac8517e69edafa64f6c133f>,
+        <https://astrea.linkeddata.es/shapes#4883877c0aeda691e7c2d350b3f3058b>,
+        <https://astrea.linkeddata.es/shapes#50bc5ccc03d7f5002f38554ccce83027>,
+        <https://astrea.linkeddata.es/shapes#56b0d7dd950614836947e20a510a1d2e>,
+        <https://astrea.linkeddata.es/shapes#5edb42624f4b58ad1ce253a312cf4f7f>,
+        <https://astrea.linkeddata.es/shapes#a0724c6d07317a025b297e3b3d81c7e8>,
+        <https://astrea.linkeddata.es/shapes#a0f888c83c60617e7e1d17906de9f944>,
+        <https://astrea.linkeddata.es/shapes#e27839733f47182b2d59cb347522d602>,
+        <https://astrea.linkeddata.es/shapes#fcef201a91ef8e49bdf66da4cdb3eeb1> ;
+    sh:targetClass schema:Course .
+
+<https://astrea.linkeddata.es/shapes#12740fc6ab3960ccb1bd60b148b76981> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:coursePrerequisites .
+
+<https://astrea.linkeddata.es/shapes#1caade321ac8517e69edafa64f6c133f> a sh:PropertyShape ;
+    rdfs:label "seeAlso"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "seeAlso"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:seeAlso .
+
+<https://astrea.linkeddata.es/shapes#4883877c0aeda691e7c2d350b3f3058b> a sh:PropertyShape ;
+    rdfs:label "license"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "license"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:license .
+
+<https://astrea.linkeddata.es/shapes#50bc5ccc03d7f5002f38554ccce83027> a sh:PropertyShape ;
+    rdfs:label "audience"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "audience"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:audience .
+
+<https://astrea.linkeddata.es/shapes#56b0d7dd950614836947e20a510a1d2e> a sh:PropertyShape ;
+    rdfs:label "requirements"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "requirements"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:requirements .
+
+<https://astrea.linkeddata.es/shapes#5edb42624f4b58ad1ce253a312cf4f7f> a sh:PropertyShape ;
+    rdfs:label "responsibleEntity"@en ;
+    sh:class schema:EducationalOrganization,
+        schema:Person ;
+    sh:name "responsibleEntity"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://w3id.org/coursesonto#responsibleEntity> .
+
+<https://astrea.linkeddata.es/shapes#a0724c6d07317a025b297e3b3d81c7e8> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:timeRequired .
+
+<https://astrea.linkeddata.es/shapes#a0f888c83c60617e7e1d17906de9f944> a sh:PropertyShape ;
+    rdfs:label "hasCourseInstance"@en ;
+    sh:class schema:CourseInstance ;
+    sh:name "hasCourseInstance"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:hasCourseInstance .
+
+<https://astrea.linkeddata.es/shapes#e27839733f47182b2d59cb347522d602> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:educationalLevel .
+
+
+
+<https://astrea.linkeddata.es/shapes#fcef201a91ef8e49bdf66da4cdb3eeb1> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:description .

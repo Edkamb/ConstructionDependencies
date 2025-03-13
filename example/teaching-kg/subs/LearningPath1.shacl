@@ -1,0 +1,22 @@
+@prefix courses: <https://w3id.org/coursesonto#> .
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#839426e13ab4a260a000f87abecde0db> a sh:NodeShape ;
+    rdfs:label "LearningPath"@en ;
+    sh:name "LearningPath"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#4e64ceb24ca330b399003f170c9bcea4> ;
+    sh:targetClass educor:LearningPath .
+
+
+<https://astrea.linkeddata.es/shapes#4e64ceb24ca330b399003f170c9bcea4> a sh:PropertyShape ;
+    rdfs:label "consistsOfKnowledge"@en ;
+    sh:class educor:KnowledgeTopic ;
+    sh:name "consistsOfKnowledge"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path educor:consistsOfKnowledge .

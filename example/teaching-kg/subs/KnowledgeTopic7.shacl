@@ -1,0 +1,45 @@
+@prefix courses: <https://w3id.org/coursesonto#> .
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://mapping.example.com/map_competency_required_000/shape> a sh:NodeShape ;
+    rdfs:label "KnowledgeTopic"@en ;
+    sh:name "KnowledgeTopic"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/competency_required/.*" ;
+    sh:property _:nd9392899b9e2463b8261be26b4850466b22,
+        _:nd9392899b9e2463b8261be26b4850466b23,
+        _:nd9392899b9e2463b8261be26b4850466b26,
+        [ sh:nodeKind sh:Literal ;
+            sh:path schema:name ],
+        [ sh:nodeKind sh:Literal ;
+            sh:path schema:educationalLevel ],
+        <https://astrea.linkeddata.es/shapes#4615e4006275b49f594fbd26bb66ea92> ;
+    sh:targetClass educor:KnowledgeTopic .
+
+
+
+
+<https://astrea.linkeddata.es/shapes#4615e4006275b49f594fbd26bb66ea92> a sh:PropertyShape ;
+    rdfs:label "theoreticalTopic"@en ;
+    sh:datatype xsd:boolean ;
+    sh:name "theoreticalTopic"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path <https://w3id.org/coursesonto#stheroreticalTopic> ;
+    sh:pattern "true|false|0|1" .
+
+_:nd9392899b9e2463b8261be26b4850466b22 sh:datatype xsd:boolean ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:mainTopic .
+
+_:nd9392899b9e2463b8261be26b4850466b23 sh:datatype xsd:boolean ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:theoreticalTopic .
+
+_:nd9392899b9e2463b8261be26b4850466b26 sh:datatype xsd:boolean ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:theoreticalTopic .

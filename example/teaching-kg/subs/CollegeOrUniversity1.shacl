@@ -1,0 +1,13 @@
+@prefix courses: <https://w3id.org/coursesonto#> .
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#c9a150c02813fa7206612ef8b381db03> a sh:NodeShape ;
+    rdfs:label "CollegeOrUniversity"@en ;
+    sh:name "CollegeOrUniversity"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass schema:CollegeOrUniversity .

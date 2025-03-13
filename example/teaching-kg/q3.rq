@@ -1,0 +1,6 @@
+
+PREFIX educor: <https://github.com/tibonto/educor#>
+
+SELECT DISTINCT ?prerequisite WHERE {
+	?prerequisite educor:requiresKnowledge ?topic .
+}

@@ -1,0 +1,6 @@
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?topic ?level WHERE {
+	?course schema:teaches ?topic .
+	?course schema:educationalLevel ?level .
+}

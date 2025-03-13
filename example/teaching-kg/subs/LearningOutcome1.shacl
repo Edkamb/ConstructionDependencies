@@ -1,0 +1,18 @@
+@prefix courses: <https://w3id.org/coursesonto#> .
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://mapping.example.com/map_learning_outcome_000/shape9247> a sh:NodeShape ;
+    rdfs:label "LearningOutcome"@en ;
+    sh:name "LearningOutcome"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "http://example.org/resource/learning_outcome/.*" ;
+    sh:property [ sh:nodeKind sh:Literal ;
+            sh:path schema:name ],
+        [ sh:nodeKind sh:Literal ;
+            sh:path schema:description ] ;
+    sh:targetClass educor:LearningOutcome .

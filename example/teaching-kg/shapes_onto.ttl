@@ -1,0 +1,478 @@
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix courses: <http://w3id.org/coursesonto#> . 
+
+<https://astrea.linkeddata.es/shapes#107f253aebe610d7f5e3d77d6f900591> rdfs:label "copyrightHolder"@en ;
+    sh:name "copyrightHolder"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#12f5734e21b86bdf94382d5547672de6> a sh:NodeShape ;
+    rdfs:label "KnowledgeTopic"@en ;
+    sh:name "KnowledgeTopic"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#35e4bf8b0ccc273ff6f2ae0370a07cfd>,
+        <https://astrea.linkeddata.es/shapes#4615e4006275b49f594fbd26bb66ea92>,
+        <https://astrea.linkeddata.es/shapes#66a18751b690b2de9917f89918bccbd9> ;
+    sh:targetClass educor:KnowledgeTopic .
+
+<https://astrea.linkeddata.es/shapes#13d55cfb6a61cb715795a9cf6745ba01> a sh:NodeShape ;
+    rdfs:label "LearningOutcome"@en ;
+    sh:name "LearningOutcome"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#089bde848fec4be50f95cd2f96816f00>,
+        <https://astrea.linkeddata.es/shapes#15c7dc57959ffa39b884ca6113a4a6f7> ;
+    sh:targetClass educor:LearningOutcome .
+
+<https://astrea.linkeddata.es/shapes#17790ee25a1fe29855c6df308eb1f5ed> a sh:NodeShape ;
+    rdfs:label "Person"@en ;
+    sh:name "Person"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3eb150136f549e9f74cfee19d9c86922>,
+        <https://astrea.linkeddata.es/shapes#7dbe3413b601b53d7126fc77259caec1>,
+        <https://astrea.linkeddata.es/shapes#96b0e87ad461fcb39b7494def89215d2>,
+        <https://astrea.linkeddata.es/shapes#a6ba3e5d84cc11533054e2864d16645e>,
+        <https://astrea.linkeddata.es/shapes#e438f08cd2b48ecfd2952d2b1fd39e05> ;
+    sh:targetClass schema:Person .
+
+<https://astrea.linkeddata.es/shapes#17a206682b4c2d25c34f54d65828ea11> a sh:PropertyShape ;
+    rdfs:label "teaches"@en ;
+    sh:class educor:KnowledgeTopic ;
+    sh:name "teaches"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:teaches .
+
+<https://astrea.linkeddata.es/shapes#251341280895226e76f366d144c03f6c> rdfs:label "provider"@en ;
+    sh:name "provider"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#2ece58c7474ee4f62bc0bbb7aa9d2f33> a sh:NodeShape ;
+    rdfs:label "CourseInstance"@en ;
+    sh:name "CourseInstance"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass schema:CourseInstance .
+
+<https://astrea.linkeddata.es/shapes#347735b05d1ffa963f292cc567cd523a> a sh:NodeShape ;
+    rdfs:label "EducationalOrganization"@en ;
+    sh:name "EducationalOrganization"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#7246f42eb51d12015d811865ed93b81c>,
+        <https://astrea.linkeddata.es/shapes#8630f0ce32117771309ef7826468e6ae>,
+        <https://astrea.linkeddata.es/shapes#b7fe0ae522261652598af9980d309aa6> ;
+    sh:targetClass schema:EducationalOrganization .
+
+<https://astrea.linkeddata.es/shapes#39900f03c674cce3088459e0b94d1782> a sh:NodeShape ;
+    rdfs:label "CourseSession" ;
+    sh:name "CourseSession" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#24045349ed0bacf4a3eb97abc3f4f70d>,
+        <https://astrea.linkeddata.es/shapes#827518cce6f16f5df334a8877f883c2f>,
+        <https://astrea.linkeddata.es/shapes#a9885d14084da83fc0d9da5d0503fcef>,
+        <https://astrea.linkeddata.es/shapes#c0a3556cdc3b2dd0504e9eb96a157bb8> ;
+    sh:targetClass courses:CourseSession,
+        schema:CourseInstance .
+
+<https://astrea.linkeddata.es/shapes#3febe3b200e08bec434a8c2fccb9892a> a sh:NodeShape ;
+    rdfs:label "EducationalResource"@en ;
+    rdfs:seeAlso "schema:LearningResource" ;
+    sh:name "EducationalResource"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#0c330760890f776688b29c8451ca1a2a>,
+        <https://astrea.linkeddata.es/shapes#3164758b8018085421d0120b98e890d9>,
+        <https://astrea.linkeddata.es/shapes#39acd5722b557b71ab307b76bee14727>,
+        <https://astrea.linkeddata.es/shapes#40532687b7db6e809045278295f2e666>,
+        <https://astrea.linkeddata.es/shapes#41a87d27961455547444da04ec0cff54>,
+        <https://astrea.linkeddata.es/shapes#594d484ef73e3c6ddc1bca32b3c8dd33>,
+        <https://astrea.linkeddata.es/shapes#bd239efba87e7ed6c15f0fb6c670d688>,
+        <https://astrea.linkeddata.es/shapes#d2d490848cf9e9236d0a09b4d3166ed9>,
+        <https://astrea.linkeddata.es/shapes#ee5bf618b4b5520ec62c3e083840ac6b> ;
+    sh:targetClass educor:EducationalResource .
+
+<https://astrea.linkeddata.es/shapes#6ccd26a860351e2305f2f82ea6c06d2d> rdfs:label "TopicType"@en ;
+    sh:name "TopicType"@en ;
+    sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#7078a9d90e341015c59c46e99ab2dec6> a sh:PropertyShape ;
+    rdfs:label "timeRequired"@en ;
+    sh:datatype xsd:duration ;
+    sh:name "timeRequired"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:timeRequired ;
+    sh:pattern "-?P((([0-9]+Y([0-9]+M)?([0-9]+D)?|([0-9]+M)([0-9]+D)?|([0-9]+D))(T(([0-9]+H)([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|([0-9]+M)([0-9]+(\\.[0-9]+)?S)?|([0-9]+(\\.[0-9]+)?S)))?)|(T(([0-9]+H)([0-9]+M)?([0-9]+(\\.[0-9]+)?S)?|([0-9]+M)([0-9]+(\\.[0-9]+)?S)?|([0-9]+(\\.[0-9]+)?S))))" .
+
+<https://astrea.linkeddata.es/shapes#7d1df83d55d31ed76e8eedecbc5a54bb> a sh:NodeShape ;
+    rdfs:label "Lecturer"@en ;
+    sh:name "Lecturer"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass courses:Lecturer .
+
+<https://astrea.linkeddata.es/shapes#7d482eb871622dc4066b4b983184ab78> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#839426e13ab4a260a000f87abecde0db> a sh:NodeShape ;
+    rdfs:label "LearningPath"@en ;
+    sh:name "LearningPath"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#4e64ceb24ca330b399003f170c9bcea4> ;
+    sh:targetClass educor:LearningPath .
+
+<https://astrea.linkeddata.es/shapes#8ef93317303d352b830d0a2cf7d8dd2f> rdfs:label "competencyRequired"@en ;
+    sh:name "competencyRequired"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#b46780fe4ee3e6785639454b4a3ff2f7> a sh:NodeShape ;
+    rdfs:label "Course"@en ;
+    sh:name "Course"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#0a750b231c32d0bb21bc78d4474e2388>,
+        <https://astrea.linkeddata.es/shapes#12740fc6ab3960ccb1bd60b148b76981>,
+        <https://astrea.linkeddata.es/shapes#1caade321ac8517e69edafa64f6c133f>,
+        <https://astrea.linkeddata.es/shapes#3f63d4ff97a9b5d4a7767bca801552e7>,
+        <https://astrea.linkeddata.es/shapes#4883877c0aeda691e7c2d350b3f3058b>,
+        <https://astrea.linkeddata.es/shapes#4ca31825eb88576352fd6cb4f48547fc>,
+        <https://astrea.linkeddata.es/shapes#50bc5ccc03d7f5002f38554ccce83027>,
+        <https://astrea.linkeddata.es/shapes#56b0d7dd950614836947e20a510a1d2e>,
+        <https://astrea.linkeddata.es/shapes#5edb42624f4b58ad1ce253a312cf4f7f>,
+        <https://astrea.linkeddata.es/shapes#69931ebdd23dee58d4dc624bd11e0efa>,
+        <https://astrea.linkeddata.es/shapes#a0724c6d07317a025b297e3b3d81c7e8>,
+        <https://astrea.linkeddata.es/shapes#a0f888c83c60617e7e1d17906de9f944>,
+        <https://astrea.linkeddata.es/shapes#e27839733f47182b2d59cb347522d602>,
+        <https://astrea.linkeddata.es/shapes#fcef201a91ef8e49bdf66da4cdb3eeb1> ;
+    sh:targetClass schema:Course .
+
+<https://astrea.linkeddata.es/shapes#b8e21605dfca9c7b6e9c04456d7dc66d> a sh:PropertyShape ;
+    rdfs:label "description"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "description"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:description .
+
+<https://astrea.linkeddata.es/shapes#c9a150c02813fa7206612ef8b381db03> a sh:NodeShape ;
+    rdfs:label "CollegeOrUniversity"@en ;
+    sh:name "CollegeOrUniversity"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass schema:CollegeOrUniversity .
+
+<https://astrea.linkeddata.es/shapes#ca7f1427576a279c9abbe1ca4849c22f> a sh:NodeShape ;
+    rdfs:label "Skill"@en ;
+    sh:name "Skill"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#20e67bd97d521389ade2150385bee82d>,
+        <https://astrea.linkeddata.es/shapes#3492f861b17a48948340c5af92147384>,
+        <https://astrea.linkeddata.es/shapes#3f837e10fd7f523919e339f32f187902>,
+        <https://astrea.linkeddata.es/shapes#8a63e4f463a93d8c60cf99113e808888>,
+        <https://astrea.linkeddata.es/shapes#cb60703d7be0e5bd878489ca47bf6407>,
+        <https://astrea.linkeddata.es/shapes#d970b01a29e252657a6924b60a4e12f9>,
+        <https://astrea.linkeddata.es/shapes#e11b34ff17fae5703d9efb54f94084b0>,
+        <https://astrea.linkeddata.es/shapes#e3b938f7ea8fbe60997581f4d4d6ed12>,
+        <https://astrea.linkeddata.es/shapes#e71cf39567df9c44dcfd9202662736a3> ;
+    sh:targetClass educor:Skill .
+
+<https://astrea.linkeddata.es/shapes#cc9d8d8fad07d9408bda075d1bc1e144> a sh:PropertyShape ;
+    rdfs:label "url"@en ;
+    sh:datatype xsd:anyURI ;
+    sh:name "url"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:url ;
+    sh:pattern "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?" .
+
+<https://astrea.linkeddata.es/shapes#f1a2fd26b450b633d6c882ca04746074> rdfs:label "coursePrerequisites"@en ;
+    sh:name "coursePrerequisites"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#f92ca0101eca647bd3ba24b8c65dbdf5> a sh:PropertyShape ;
+    rdfs:label "educationalLevel"@en ;
+    sh:datatype xsd:string ;
+    sh:name "educationalLevel"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:educationalLevel ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#fc0d21c7fe9b204c74def05369881b16> a sh:PropertyShape ;
+    rdfs:label "name"@en ;
+    sh:datatype xsd:string ;
+    sh:name "name"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:name ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#089bde848fec4be50f95cd2f96816f00> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:description .
+
+<https://astrea.linkeddata.es/shapes#0a750b231c32d0bb21bc78d4474e2388> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:provider .
+
+<https://astrea.linkeddata.es/shapes#0c330760890f776688b29c8451ca1a2a> a sh:PropertyShape ;
+    rdfs:label "isAccessibleForFree"@en ;
+    sh:datatype xsd:boolean ;
+    sh:name "isAccessibleForFree"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:isAccessibleForFree ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#12740fc6ab3960ccb1bd60b148b76981> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:coursePrerequisites .
+
+<https://astrea.linkeddata.es/shapes#15c7dc57959ffa39b884ca6113a4a6f7> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#1caade321ac8517e69edafa64f6c133f> a sh:PropertyShape ;
+    rdfs:label "seeAlso"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "seeAlso"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:seeAlso .
+
+<https://astrea.linkeddata.es/shapes#20e67bd97d521389ade2150385bee82d> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:competencyRequired .
+
+<https://astrea.linkeddata.es/shapes#24045349ed0bacf4a3eb97abc3f4f70d> a sh:PropertyShape ;
+    rdfs:label "instructor"@en ;
+    sh:class schema:Person ;
+    sh:name "instructor"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:instructor .
+
+<https://astrea.linkeddata.es/shapes#3164758b8018085421d0120b98e890d9> a sh:PropertyShape ;
+    rdfs:label "isSimilarTo"@en ;
+    sh:class educor:EducationalResource ;
+    sh:name "isSimilarTo"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:isSimilarTo .
+
+<https://astrea.linkeddata.es/shapes#3492f861b17a48948340c5af92147384> a sh:PropertyShape ;
+    rdfs:label "mainSkill"@en ;
+    sh:datatype xsd:boolean ;
+    sh:name "mainSkill"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:mainSkill ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#35e4bf8b0ccc273ff6f2ae0370a07cfd> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#39acd5722b557b71ab307b76bee14727> a sh:PropertyShape ;
+    rdfs:label "coreResource"@en ;
+    sh:datatype xsd:boolean ;
+    sh:name "coreResource"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:coreResource ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#3eb150136f549e9f74cfee19d9c86922> a sh:PropertyShape ;
+    rdfs:label "email"@en ;
+    sh:datatype xsd:string ;
+    sh:name "email"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:email ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#3f63d4ff97a9b5d4a7767bca801552e7> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#3f837e10fd7f523919e339f32f187902> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:url .
+
+<https://astrea.linkeddata.es/shapes#40532687b7db6e809045278295f2e666> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:description .
+
+<https://astrea.linkeddata.es/shapes#41a87d27961455547444da04ec0cff54> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:url .
+
+<https://astrea.linkeddata.es/shapes#4615e4006275b49f594fbd26bb66ea92> a sh:PropertyShape ;
+    rdfs:label "theoreticalTopic"@en ;
+    sh:datatype xsd:boolean ;
+    sh:name "theoreticalTopic"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:stheroreticalTopic ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#4883877c0aeda691e7c2d350b3f3058b> a sh:PropertyShape ;
+    rdfs:label "license"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "license"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:license .
+
+<https://astrea.linkeddata.es/shapes#4ca31825eb88576352fd6cb4f48547fc> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:teaches .
+
+<https://astrea.linkeddata.es/shapes#4e64ceb24ca330b399003f170c9bcea4> a sh:PropertyShape ;
+    rdfs:label "consistsOfKnowledge"@en ;
+    sh:class educor:KnowledgeTopic ;
+    sh:name "consistsOfKnowledge"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path educor:consistsOfKnowledge .
+
+<https://astrea.linkeddata.es/shapes#50bc5ccc03d7f5002f38554ccce83027> a sh:PropertyShape ;
+    rdfs:label "audience"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "audience"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:audience .
+
+<https://astrea.linkeddata.es/shapes#56b0d7dd950614836947e20a510a1d2e> a sh:PropertyShape ;
+    rdfs:label "requirements"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "requirements"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:requirements .
+
+<https://astrea.linkeddata.es/shapes#594d484ef73e3c6ddc1bca32b3c8dd33> a sh:PropertyShape ;
+    rdfs:label "author"@en ;
+    sh:class schema:Person ;
+    sh:name "author"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:author .
+
+<https://astrea.linkeddata.es/shapes#5edb42624f4b58ad1ce253a312cf4f7f> a sh:PropertyShape ;
+    rdfs:label "responsibleEntity"@en ;
+    sh:class schema:EducationalOrganization,
+        schema:Person ;
+    sh:name "responsibleEntity"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path courses:responsibleEntity .
+
+<https://astrea.linkeddata.es/shapes#66a18751b690b2de9917f89918bccbd9> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:educationalLevel .
+
+<https://astrea.linkeddata.es/shapes#69931ebdd23dee58d4dc624bd11e0efa> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:url .
+
+<https://astrea.linkeddata.es/shapes#7246f42eb51d12015d811865ed93b81c> a sh:PropertyShape ;
+    rdfs:label "location"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "location"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:location .
+
+<https://astrea.linkeddata.es/shapes#7dbe3413b601b53d7126fc77259caec1> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:url .
+
+<https://astrea.linkeddata.es/shapes#827518cce6f16f5df334a8877f883c2f> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#8630f0ce32117771309ef7826468e6ae> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:url .
+
+<https://astrea.linkeddata.es/shapes#8a63e4f463a93d8c60cf99113e808888> a sh:PropertyShape ;
+    rdfs:label "assesses"@en ;
+    sh:class educor:LearningOutcome ;
+    sh:name "assesses"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:assesses .
+
+<https://astrea.linkeddata.es/shapes#96b0e87ad461fcb39b7494def89215d2> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#a0724c6d07317a025b297e3b3d81c7e8> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:timeRequired .
+
+<https://astrea.linkeddata.es/shapes#a0f888c83c60617e7e1d17906de9f944> a sh:PropertyShape ;
+    rdfs:label "hasCourseInstance"@en ;
+    sh:class schema:CourseInstance ;
+    sh:name "hasCourseInstance"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:hasCourseInstance .
+
+<https://astrea.linkeddata.es/shapes#a6ba3e5d84cc11533054e2864d16645e> a sh:PropertyShape ;
+    rdfs:label "gender"@en ;
+    sh:datatype xsd:short ;
+    sh:maxInclusive 32767 ;
+    sh:minInclusive -32768 ;
+    sh:name "gender"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:gender ;
+    sh:pattern "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#a9885d14084da83fc0d9da5d0503fcef> a sh:PropertyShape ;
+    rdfs:label "about"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "about"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:about .
+
+<https://astrea.linkeddata.es/shapes#b7fe0ae522261652598af9980d309aa6> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#bd239efba87e7ed6c15f0fb6c670d688> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:copyrightHolder .
+
+<https://astrea.linkeddata.es/shapes#c0a3556cdc3b2dd0504e9eb96a157bb8> a sh:PropertyShape ;
+    rdfs:label "containsResource"@en ;
+    sh:class educor:EducationalResource ;
+    sh:name "containsResource"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path courses:containsResource .
+
+<https://astrea.linkeddata.es/shapes#cb60703d7be0e5bd878489ca47bf6407> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:timeRequired .
+
+<https://astrea.linkeddata.es/shapes#d2d490848cf9e9236d0a09b4d3166ed9> a sh:PropertyShape ;
+    rdfs:label "educationalResourceType"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "educationalResourceType"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path courses:educationalResourceType .
+
+<https://astrea.linkeddata.es/shapes#d970b01a29e252657a6924b60a4e12f9> a sh:PropertyShape ;
+    rdfs:label "requiresKnowledge"@en ;
+    sh:class educor:KnowledgeTopic ;
+    sh:name "requiresKnowledge"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path educor:requiresKnowledge .
+
+<https://astrea.linkeddata.es/shapes#e11b34ff17fae5703d9efb54f94084b0> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#e27839733f47182b2d59cb347522d602> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:educationalLevel .
+
+<https://astrea.linkeddata.es/shapes#e3b938f7ea8fbe60997581f4d4d6ed12> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:educationalLevel .
+
+<https://astrea.linkeddata.es/shapes#e438f08cd2b48ecfd2952d2b1fd39e05> a sh:PropertyShape ;
+    rdfs:label "memberOf" ;
+    sh:class schema:EducationalOrganization ;
+    sh:name "memberOf" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:memberOf .
+
+<https://astrea.linkeddata.es/shapes#e71cf39567df9c44dcfd9202662736a3> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:teaches .
+
+<https://astrea.linkeddata.es/shapes#ee5bf618b4b5520ec62c3e083840ac6b> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#fcef201a91ef8e49bdf66da4cdb3eeb1> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:description .
+

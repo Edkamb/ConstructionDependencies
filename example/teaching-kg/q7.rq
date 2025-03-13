@@ -1,0 +1,8 @@
+
+
+PREFIX schema: <http://schema.org/>
+
+SELECT ?educational_organization ?country ?name WHERE {
+	?educational_organization schema:location ?country .
+ 	?educational_organization schema:name ?name
+}

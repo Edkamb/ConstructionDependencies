@@ -14,7 +14,7 @@ mappings:
     sources:
       - access: 'source_1.csv'
         referenceFormulation: csv
-    s: https://www.smolang.org/dependency/usr$(id)
+    s: https://www.smolang.org/dependency/usr$(nid)
     po:
       - [a, dep:User]
       - [dep:name, $(first) $(last)]

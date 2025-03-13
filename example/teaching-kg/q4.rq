@@ -1,0 +1,9 @@
+PREFIX courses: <https://w3id.org/coursesonto#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?course ?requiresKnowledge ?mainSkill WHERE {
+	?course schema:teaches ?topic .
+	?topic schema:name ?requiresKnowledge .
+    ?topic courses:mainTopic ?mainSkill .
+
+}

@@ -1,0 +1,55 @@
+@prefix courses: <https://w3id.org/coursesonto#> .
+@prefix educor: <https://github.com/tibonto/educor#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+<https://astrea.linkeddata.es/shapes#39900f03c674cce3088459e0b94d1782> a sh:NodeShape ;
+    rdfs:label "CourseSession",
+        "CourseInstance"@en ;
+    sh:name "CourseSession",
+        "CourseInstance"@en ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#24045349ed0bacf4a3eb97abc3f4f70d>,
+        <https://astrea.linkeddata.es/shapes#827518cce6f16f5df334a8877f883c2f>,
+        <https://astrea.linkeddata.es/shapes#a9885d14084da83fc0d9da5d0503fcef>,
+        <https://astrea.linkeddata.es/shapes#c0a3556cdc3b2dd0504e9eb96a157bb8> ;
+    sh:targetClass <https://w3id.org/coursesonto#CourseSession>,
+        schema:CourseInstance .
+
+
+
+
+<https://astrea.linkeddata.es/shapes#24045349ed0bacf4a3eb97abc3f4f70d> a sh:PropertyShape ;
+    rdfs:label "instructor"@en ;
+    sh:class schema:Person ;
+    sh:name "instructor"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path schema:instructor .
+
+
+<https://astrea.linkeddata.es/shapes#827518cce6f16f5df334a8877f883c2f> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path schema:name .
+
+<https://astrea.linkeddata.es/shapes#a9885d14084da83fc0d9da5d0503fcef> a sh:PropertyShape ;
+    rdfs:label "about"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "about"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:about .
+
+<https://astrea.linkeddata.es/shapes#a9885d14084da83fc0d9da5d0503fcef> a sh:PropertyShape ;
+    rdfs:label "about"@en ;
+    sh:datatype rdf:langString ;
+    sh:name "about"@en ;
+    sh:nodeKind sh:Literal ;
+    sh:path schema:about .
+
+<https://astrea.linkeddata.es/shapes#c0a3556cdc3b2dd0504e9eb96a157bb8> a sh:PropertyShape ;
+    rdfs:label "containsResource"@en ;
+    sh:class educor:EducationalResource ;
+    sh:name "containsResource"@en ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <https://w3id.org/coursesonto#containsResource> .

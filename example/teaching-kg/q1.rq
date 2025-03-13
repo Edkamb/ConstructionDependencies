@@ -1,0 +1,8 @@
+PREFIX schema: <http://schema.org/> 
+PREFIX courses: <https://w3id.org/coursesonto#> 
+
+SELECT ?person WHERE {
+	?course schema:teaches ?topic .
+	?course courses:responsibleEntity ?person .
+	FILTER(?topic = <X>)
+}

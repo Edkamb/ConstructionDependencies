@@ -1,0 +1,6 @@
+PREFIX schema: <http://schema.org/>
+
+SELECT ?url WHERE {
+	?course schema:url ?url .
+	FILTER(?course = <Y>) # replace Y with URI of the given Course
+}
