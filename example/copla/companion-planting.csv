@@ -1,0 +1,544 @@
+Apple;Chives;companion
+Apple;Garlic;companion
+Apple;Grass;antagonistic
+Apple;Horseradish;companion
+Apple;Lemon Balm;companion
+Apple;Marigold;companion
+Apple;Mustard;companion
+Apple;Nasturtium;companion
+Apple;Potato;antagonistic
+Apple;Spinach;companion
+Apple;Tansy;companion
+Apple;Yarrow;companion
+Apricot;Basil;companion
+Apricot;Garlic;companion
+Apricot;Grass;antagonistic
+Apricot;Horseradish;companion
+Apricot;Lemon Balm;companion
+Apricot;Marigold;companion
+Apricot;Mustard;companion
+Apricot;Nasturtium;companion
+Apricot;Spinach;companion
+Apricot;Sunﬂower;companion
+Apricot;Tansy;companion
+Apricot;Tomato;antagonistic
+Apricot;Yarrow;companion
+Asparagus;Basil;companion
+Asparagus;Chives;companion
+Asparagus;Marjoram;companion
+Asparagus;Parsley;companion
+Asparagus;Tomato;companion
+Basil;Apricot;companion
+Basil;Asparagus;companion
+Basil;Cucumber;companion
+Basil;Fennel;companion
+Basil;Rue;antagonistic
+Basil;Silverbeet;antagonistic
+Basil;Tomato;companion
+Bean;Cabbage;companion
+Bean;Carrot;companion
+Bean;Chives;antagonistic
+Bean;Corn;companion
+Bean;Cucumber;companion
+Bean;Eggplant;companion
+Bean;Fennel;antagonistic
+Bean;Garlic;antagonistic
+Bean;Lettuce;companion
+Bean;Marigold;companion
+Bean;Marjoram;companion
+Bean;Onion;antagonistic
+Bean;Parsley;companion
+Bean;Parsnip;companion
+Bean;Potato;companion
+Bean;Rosemary;companion
+Bean;Sage;companion
+Bean;Shallot;antagonistic
+Beet;Bush Bean;companion
+Beet;Cabbage;companion
+Beet;Climbing Bean;antagonistic
+Beet;Dill;companion
+Beet;Lettuce;companion
+Beet;Marjoram;companion
+Beet;Onion;companion
+Beet;Potato;companion
+Beet;Silverbeet;companion
+Beet;Tomato;antagonistic
+Borage;Cabbage;companion
+Borage;Cucumber;companion
+Borage;Strawberry;companion
+Borage;Tansy;companion
+Borage;Tomato;companion
+Broad Bean;Cabbage;companion
+Broad Bean;Chives;antagonistic
+Broad Bean;Corn;companion
+Broad Bean;Fennel;antagonistic
+Broad Bean;Garlic;antagonistic
+Broad Bean;Lettuce;companion
+Broad Bean;Marjoram;companion
+Broad Bean;Onion;antagonistic
+Broad Bean;Potato;companion
+Broad Bean;Spinach;companion
+Broccoli;Bean;companion
+Broccoli;Beet;companion
+Broccoli;Borage;companion
+Broccoli;Broad Bean;companion
+Broccoli;Bush Bean;companion
+Broccoli;Climbing Bean;companion
+Broccoli;Coriander;companion
+Broccoli;Cucumber;companion
+Broccoli;Dill;companion
+Broccoli;Marigold;companion
+Broccoli;Marjoram;companion
+Broccoli;Nasturtium;companion
+Broccoli;Potato;companion
+Broccoli;Rue;antagonistic
+Broccoli;Strawberry;antagonistic
+Broccoli;Tomato;companion
+Brussell Sprout;Bean;companion
+Brussell Sprout;Beet;companion
+Brussell Sprout;Borage;companion
+Brussell Sprout;Broad Bean;companion
+Brussell Sprout;Bush Bean;companion
+Brussell Sprout;Climbing Bean;companion
+Brussell Sprout;Coriander;companion
+Brussell Sprout;Cucumber;companion
+Brussell Sprout;Dill;companion
+Brussell Sprout;Marigold;companion
+Brussell Sprout;Marjoram;companion
+Brussell Sprout;Potato;companion
+Brussell Sprout;Strawberry;companion
+Brussell Sprout;Sunﬂower;companion
+Bush Bean;Beet;companion
+Bush Bean;Cabbage;companion
+Bush Bean;Celery;companion
+Bush Bean;Chives;antagonistic
+Bush Bean;Corn;companion
+Bush Bean;Cucumber;companion
+Bush Bean;Garlic;antagonistic
+Bush Bean;Marjoram;companion
+Bush Bean;Onion;antagonistic
+Bush Bean;Potato;companion
+Bush Bean;Strawberry;companion
+Bush Bean;Sunﬂower;companion
+Cabbage;Bean;companion
+Cabbage;Beet;companion
+Cabbage;Borage;companion
+Cabbage;Broad Bean;companion
+Cabbage;Bush Bean;companion
+Cabbage;Celery;companion
+Cabbage;Climbing Bean;companion
+Cabbage;Coriander;companion
+Cabbage;Cucumber;companion
+Cabbage;Dill;companion
+Cabbage;Garlic;antagonistic
+Cabbage;Lavender;companion
+Cabbage;Lettuce;companion
+Cabbage;Marigold;companion
+Cabbage;Marjoram;companion
+Cabbage;Mint;companion
+Cabbage;Nasturtium;companion
+Cabbage;Onion;companion
+Cabbage;Potato;companion
+Cabbage;Rosemary;companion
+Cabbage;Rue;antagonistic
+Cabbage;Sage;companion
+Cabbage;Strawberry;antagonistic
+Cabbage;Tansy;companion
+Cabbage;Thyme;companion
+Carrot;Bean;companion
+Carrot;Chives;companion
+Carrot;Coriander;companion
+Carrot;Cucumber;companion
+Carrot;Dill;companion
+Carrot;Fruit Tree;companion
+Carrot;Leek;companion
+Carrot;Lettuce;companion
+Carrot;Marjoram;companion
+Carrot;Onion;companion
+Carrot;Parsnip;antagonistic
+Carrot;Radish;companion
+Carrot;Rue;companion
+Carrot;Tomato;companion
+Cauliﬂower;Bean;companion
+Cauliﬂower;Beet;companion
+Cauliﬂower;Borage;companion
+Cauliﬂower;Broad Bean;companion
+Cauliﬂower;Bush Bean;companion
+Cauliﬂower;Celery;companion
+Cauliﬂower;Climbing Bean;companion
+Cauliﬂower;Coriander;companion
+Cauliﬂower;Cucumber;companion
+Cauliﬂower;Dill;companion
+Cauliﬂower;Marigold;companion
+Cauliﬂower;Marjoram;companion
+Cauliﬂower;Potato;companion
+Cauliﬂower;Rue;antagonistic
+Cauliﬂower;Strawberry;antagonistic
+Cauliﬂower;Tomato;companion
+Celery;Bush Bean;companion
+Celery;Cabbage;companion
+Celery;Dill;companion
+Celery;Leek;companion
+Celery;Marjoram;companion
+Celery;Parsnip;antagonistic
+Celery;Potato;antagonistic
+Celery;Tomato;companion
+Chamomile;Cabbage;companion
+Chamomile;Mint;antagonistic
+Cherry;Chives;companion
+Cherry;Garlic;companion
+Cherry;Grass;antagonistic
+Cherry;Horseradish;companion
+Cherry;Lemon Balm;companion
+Cherry;Lettuce;companion
+Cherry;Marigold;companion
+Cherry;Mustard;companion
+Cherry;Nasturtium;companion
+Cherry;Potato;antagonistic
+Cherry;Silverbeet;companion
+Cherry;Spinach;companion
+Cherry;Tansy;companion
+Cherry;Yarrow;companion
+Chervil;Coriander;companion
+Chervil;Dill;companion
+Chervil;Lettuce;companion
+Chervil;Radish;companion
+Chives;Basil;companion
+Chives;Bean;antagonistic
+Chives;Broad Bean;antagonistic
+Chives;Bush Bean;antagonistic
+Chives;Carrot;companion
+Chives;Cherry;companion
+Chives;Climbing Bean;antagonistic
+Chives;Fruit Tree;companion
+Chives;Marjoram;companion
+Chives;Parsley;companion
+Chives;Parsnip;companion
+Chives;Rose;companion
+Chives;Strawberry;companion
+Chives;Tomato;companion
+Climbing Bean;Beet;antagonistic
+Climbing Bean;Cabbage;companion
+Climbing Bean;Chives;antagonistic
+Climbing Bean;Corn;companion
+Climbing Bean;Garlic;antagonistic
+Climbing Bean;Lettuce;companion
+Climbing Bean;Marjoram;companion
+Climbing Bean;Onion;antagonistic
+Climbing Bean;Radish;companion
+Climbing Bean;Sunﬂower;antagonistic
+Corn;Bean;companion
+Corn;Broad Bean;companion
+Corn;Bush Bean;companion
+Corn;Climbing Bean;companion
+Corn;Cucumber;companion
+Corn;Marjoram;companion
+Corn;Parsnip;companion
+Corn;Potato;companion
+Corn;Pumpkin;companion
+Corn;Radish;companion
+Corn;Zucchini;companion
+Cucumber;Basil;companion
+Cucumber;Bean;companion
+Cucumber;Borage;companion
+Cucumber;Bush Bean;companion
+Cucumber;Cabbage;companion
+Cucumber;Carrot;companion
+Cucumber;Corn;companion
+Cucumber;Dill;companion
+Cucumber;Lettuce;companion
+Cucumber;Marjoram;companion
+Cucumber;Nasturtium;companion
+Cucumber;Potato;antagonistic
+Cucumber;Radish;companion
+Cucumber;Sage;antagonistic
+Cucumber;Sunﬂower;companion
+Cucumber;Tansy;companion
+Fennel;Basil;companion
+Fennel;Bean;antagonistic
+Fennel;Broad Bean;antagonistic
+Fennel;Coriander;antagonistic
+Fennel;Dill;companion
+Fennel;Lavender;antagonistic
+Fennel;Tomato;antagonistic
+Fruit Tree;Chives;companion
+Fruit Tree;Garlic;companion
+Fruit Tree;Grass;antagonistic
+Fruit Tree;Lemon Balm;companion
+Fruit Tree;Marigold;companion
+Fruit Tree;Mustard;companion
+Fruit Tree;Nasturtium;companion
+Fruit Tree;Silverbeet;companion
+Fruit Tree;Spinach;companion
+Fruit Tree;Tansy;companion
+Fruit Tree;Yarrow;companion
+Garlic;Apricot;companion
+Garlic;Bean;antagonistic
+Garlic;Broad Bean;antagonistic
+Garlic;Bush Bean;antagonistic
+Garlic;Cabbage;antagonistic
+Garlic;Chervil;companion
+Garlic;Climbing Bean;antagonistic
+Garlic;Fruit Tree;companion
+Garlic;Lavender;companion
+Garlic;Rosemary;companion
+Garlic;Rose;companion
+Garlic;Sunﬂower;antagonistic
+Grape Vine;Bean;companion
+Grape Vine;Mustard;companion
+Grape Vine;Tansy;companion
+Grape Vine;Tomato;companion
+Grape Vine;Yarrow;companion
+Lettuce;Bean;companion
+Lettuce;Beet;companion
+Lettuce;Broad Bean;companion
+Lettuce;Cabbage;companion
+Lettuce;Carrot;companion
+Lettuce;Cherry;companion
+Lettuce;Chervil;companion
+Lettuce;Climbing Bean;companion
+Lettuce;Cucumber;companion
+Lettuce;Marigold;companion
+Lettuce;Marjoram;companion
+Lettuce;Onion;companion
+Lettuce;Parsley;antagonistic
+Lettuce;Parsnip;companion
+Lettuce;Radish;companion
+Lettuce;Strawberry;companion
+Marigold;Apricot;companion
+Marigold;Bean;companion
+Marigold;Cabbage;companion
+Marigold;Carrot;companion
+Marigold;Cherry;companion
+Marigold;Fruit Tree;companion
+Marigold;Lettuce;companion
+Marigold;Potato;companion
+Marigold;Raspberry;companion
+Marigold;Rose;companion
+Marigold;Strawberry;companion
+Marigold;Tomato;companion
+Marjoram;Asparagus;companion
+Marjoram;Bean;companion
+Marjoram;Beet;companion
+Marjoram;Broad Bean;companion
+Marjoram;Bush Bean;companion
+Marjoram;Cabbage;companion
+Marjoram;Carrot;companion
+Marjoram;Celery;companion
+Marjoram;Chives;companion
+Marjoram;Climbing Bean;companion
+Marjoram;Corn;companion
+Marjoram;Cucumber;companion
+Marjoram;Eggplant;companion
+Marjoram;Lavender;companion
+Marjoram;Leek;companion
+Marjoram;Lettuce;companion
+Marjoram;Onion;companion
+Marjoram;Parsnip;companion
+Marjoram;Potato;companion
+Marjoram;Pumpkin;companion
+Marjoram;Radish;companion
+Marjoram;Shallot;companion
+Marjoram;Silverbeet;companion
+Marjoram;Spinach;companion
+Marjoram;Tomato;companion
+Marjoram;Zucchini;companion
+Mulberry;Chives;companion
+Mulberry;Garlic;companion
+Mulberry;Grape Vine;companion
+Mulberry;Grass;companion
+Mulberry;Lemon Balm;companion
+Mulberry;Marigold;companion
+Mulberry;Mustard;companion
+Mulberry;Nasturtium;companion
+Mulberry;Silverbeet;companion
+Mulberry;Spinach;companion
+Mulberry;Tansy;companion
+Mulberry;Yarrow;companion
+Nasturtium;Apricot;companion
+Nasturtium;Cabbage;companion
+Nasturtium;Cherry;companion
+Nasturtium;Cucumber;companion
+Nasturtium;Fruit Tree;companion
+Nasturtium;Potato;companion
+Nasturtium;Radish;companion
+Nasturtium;Rose;companion
+Nasturtium;Tomato;companion
+Nasturtium;Zucchini;companion
+Onion;Bean;antagonistic
+Onion;Beet;companion
+Onion;Broad Bean;antagonistic
+Onion;Bush Bean;antagonistic
+Onion;Cabbage;companion
+Onion;Carrot;companion
+Onion;Climbing Bean;antagonistic
+Onion;Leek;companion
+Onion;Lettuce;companion
+Onion;Marjoram;companion
+Onion;Parsley;companion
+Onion;Parsnip;companion
+Onion;Rose;companion
+Onion;Silverbeet;companion
+Onion;Strawberry;companion
+Onion;Tomato;companion
+Parsley;Asparagus;companion
+Parsley;Bean;companion
+Parsley;Chervil;companion
+Parsley;Lettuce;antagonistic
+Parsley;Mint;antagonistic
+Parsley;Onion;companion
+Parsley;Rose;companion
+Parsley;Tomato;companion
+Pea;Bean;companion
+Pea;Borage;companion
+Pea;Cabbage;companion
+Pea;Carrot;companion
+Pea;Celery;companion
+Pea;Chives;antagonistic
+Pea;Corn;companion
+Pea;Cucumber;companion
+Pea;Garlic;antagonistic
+Pea;Lettuce;companion
+Pea;Marjoram;companion
+Pea;Onion;antagonistic
+Pea;Parsnip;companion
+Pea;Potato;companion
+Pea;Raspberry;companion
+Pea;Sage;companion
+Pea;Shallot;antagonistic
+Pennyroyal;Cabbage;companion
+Potato;Bean;companion
+Potato;Beet;companion
+Potato;Broad Bean;companion
+Potato;Bush Bean;companion
+Potato;Cabbage;companion
+Potato;Celery;antagonistic
+Potato;Cherry;antagonistic
+Potato;Corn;companion
+Potato;Cucumber;antagonistic
+Potato;Eggplant;companion
+Potato;Horseradish;companion
+Potato;Marjoram;companion
+Potato;Nasturtium;companion
+Potato;Parsnip;companion
+Potato;Pumpkin;antagonistic
+Potato;Raspberry;antagonistic
+Potato;Rosemary;antagonistic
+Potato;Sunﬂower;antagonistic
+Potato;Tomato;antagonistic
+Pumpkin;Corn;companion
+Pumpkin;Marjoram;companion
+Radish;Carrot;companion
+Radish;Chervil;companion
+Radish;Climbing Bean;companion
+Radish;Corn;companion
+Radish;Cucumber;companion
+Radish;Lettuce;companion
+Radish;Marjoram;companion
+Radish;Nasturtium;companion
+Radish;Parsnip;companion
+Rosemary;Bean;companion
+Rosemary;Cabbage;companion
+Rosemary;Carrot;companion
+Rosemary;Garlic;companion
+Rosemary;Parsley;companion
+Rosemary;Sage;companion
+Rosemary;Tomato;antagonistic
+Rose;Chives;companion
+Rose;Garlic;companion
+Rose;Horseradish;companion
+Rose;Lavender;companion
+Rose;Lemon Balm;companion
+Rose;Marigold;companion
+Rose;Nasturtium;companion
+Rose;Onion;companion
+Rose;Parsley;companion
+Rose;Rue;companion
+Rose;Sage;companion
+Rose;Tansy;companion
+Rose;Thyme;companion
+Rue;Basil;antagonistic
+Rue;Cabbage;antagonistic
+Rue;Raspberry;companion
+Rue;Rose;companion
+Rue;Sage;antagonistic
+Sage;Bean;companion
+Sage;Cabbage;companion
+Sage;Carrot;companion
+Sage;Cucumber;antagonistic
+Sage;Grass;antagonistic
+Sage;Parsnip;companion
+Sage;Rosemary;companion
+Sage;Rose;companion
+Sage;Rue;antagonistic
+Sage;Strawberry;companion
+Savory;Bean;companion
+Savory;Onion;companion
+Silverbeet;Basil;antagonistic
+Silverbeet;Beet;companion
+Silverbeet;Cherry;companion
+Silverbeet;Fruit Tree;companion
+Silverbeet;Lavender;companion
+Silverbeet;Marjoram;companion
+Silverbeet;Onion;companion
+Spinach;Apricot;companion
+Spinach;Broad Bean;companion
+Spinach;Cherry;companion
+Spinach;Fruit Tree;companion
+Spinach;Marjoram;companion
+Spinach;Strawberry;companion
+Squash;Borage;companion
+Squash;Corn;companion
+Squash;Marjoram;companion
+Squash;Nasturtium;companion
+Squash;Sunﬂower;companion
+Squash;Tansy;companion
+Stinging Nettle;Apricot;companion
+Stinging Nettle;Fruit Tree;companion
+Stinging Nettle;Horseradish;companion
+Stinging Nettle;Tomato;companion
+Strawberry;Borage;companion
+Strawberry;Bush Bean;companion
+Strawberry;Cabbage;antagonistic
+Strawberry;Chives;companion
+Strawberry;Garlic;antagonistic
+Strawberry;Lavender;companion
+Strawberry;Lettuce;companion
+Strawberry;Marigold;companion
+Strawberry;Onion;companion
+Strawberry;Sage;companion
+Strawberry;Spinach;companion
+Sunﬂower;Apricot;companion
+Sunﬂower;Bush Bean;companion
+Sunﬂower;Climbing Bean;antagonistic
+Sunﬂower;Cucumber;companion
+Tomato;Apricot;antagonistic
+Tomato;Asparagus;companion
+Tomato;Basil;companion
+Tomato;Beet;antagonistic
+Tomato;Borage;companion
+Tomato;Cabbage;antagonistic
+Tomato;Carrot;companion
+Tomato;Celery;companion
+Tomato;Chives;companion
+Tomato;Dill;companion
+Tomato;Fennel;antagonistic
+Tomato;Gooseberry;companion
+Tomato;Grape Vine;companion
+Tomato;Marigold;companion
+Tomato;Marjoram;companion
+Tomato;Mint;companion
+Tomato;Nasturtium;companion
+Tomato;Onion;companion
+Tomato;Parsley;companion
+Tomato;Parsnip;companion
+Tomato;Rosemary;antagonistic
+Yarrow;Apricot;companion
+Yarrow;Chervil;companion
+Yarrow;Fruit Tree;companion
+Yarrow;Grape Vine;companion
+Yarrow;Grass;companion
+Yarrow;Tansy;companion
+Zucchini;Corn;companion
+Zucchini;Marjoram;companion
+Zucchini;Nasturtium;companion
